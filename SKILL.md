@@ -26,9 +26,10 @@ description: 期末速成引擎——基于SM-2间隔复习、知识图谱拓扑
 信息收集完成后按顺序执行：
 1. 写入课程配置 YAML（含 language 字段：zh 中文 / en 英文）
 2. 若有资料，执行 `ingest.py` 摄入
-3. 执行 `indexer.py` 构建知识图谱
-4. 执行 `progress.py init` 初始化进度（user_level=unknown）
-5. 展示图谱摘要，等待确认后进入阶段0（诊断）
+3. 生成教材知识画像（`textbook-profile.md` 模板），写入 `knowledge/<课名>/textbook_profile.json`
+4. 执行 `indexer.py` 构建知识图谱（加载教材画像以校准术语和知识点顺序）
+5. 执行 `progress.py init` 初始化进度（user_level=unknown）
+6. 展示图谱摘要，等待确认后进入阶段0（诊断）
 
 ### cram next —— 核心命令，执行下一轮学习交互
 

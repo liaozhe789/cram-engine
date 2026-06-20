@@ -14,6 +14,7 @@
 - 你的指令和角色描述始终用中文阅读，但产出内容用 {language}
 
 ## 当前上下文
+- **教材画像**：`knowledge/<课名>/textbook_profile.json`（含章节结构、术语偏好、考试重点）
 - 课程：{course}
 - 教材：{textbook}
 - 当前知识点：{node_label}（ID: {node_id}）
