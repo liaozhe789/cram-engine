@@ -49,9 +49,7 @@
       "label": "顺序表的实现与基本操作",
       "parent": "线性结构",
       "weight": "key_point",
-      "prerequisites": [
-        "算法空间复杂度分析"
-      ],
+      "prerequisites": [],
       "hooks": [
         "none"
       ],
@@ -161,8 +159,7 @@
       "parent": "线性结构",
       "weight": "key_point",
       "prerequisites": [
-        "链表的程序设计",
-        "顺序表与链表的比较"
+        "链表的程序设计"
       ],
       "hooks": [
         "none"
@@ -184,8 +181,7 @@
       "parent": "线性结构",
       "weight": "key_point",
       "prerequisites": [
-        "链表的程序设计",
-        "栈的定义与顺序栈实现"
+        "链表的程序设计"
       ],
       "hooks": [
         "none"
@@ -229,8 +225,7 @@
       "parent": "线性结构",
       "weight": "must_know",
       "prerequisites": [
-        "链表的程序设计",
-        "链栈的表示与实现"
+        "链表的程序设计"
       ],
       "hooks": [
         "none"
@@ -293,12 +288,9 @@
     {
       "id": "kmp算法与bf算法区别",
       "label": "KMP算法与BF算法区别",
-      "parent": "线性结构",
+      "parent": "Linear Structures",
       "weight": "must_know",
-      "prerequisites": [
-        "循环队列空与满的判断",
-        "链栈的表示与实现"
-      ],
+      "prerequisites": [],
       "hooks": [
         "contrast"
       ],
@@ -340,9 +332,7 @@
       "label": "特殊矩阵的压缩存储",
       "parent": "矩阵与广义表",
       "weight": "key_point",
-      "prerequisites": [
-        "next数组的求解"
-      ],
+      "prerequisites": [],
       "hooks": [
         "absurd",
         "acronym"
@@ -364,8 +354,7 @@
       "parent": "基础概念",
       "weight": "key_point",
       "prerequisites": [
-        "next数组的求解",
-        "串的存储结构与模式匹配算法"
+        "next数组的求解"
       ],
       "hooks": [
         "none"
@@ -387,8 +376,7 @@
       "parent": "基础概念",
       "weight": "key_point",
       "prerequisites": [
-        "next数组的求解",
-        "广义表的定义与存储结构"
+        "next数组的求解"
       ],
       "hooks": [
         "none"
@@ -409,9 +397,7 @@
       "label": "二叉树的遍历（前序/中序/后序/层次）",
       "parent": "树结构",
       "weight": "must_know",
-      "prerequisites": [
-        "二叉树的性质与存储结构"
-      ],
+      "prerequisites": [],
       "hooks": [
         "acronym"
       ],
@@ -455,8 +441,7 @@
       "parent": "树结构",
       "weight": "key_point",
       "prerequisites": [
-        "二叉树的遍历前序中序后序层次",
-        "线索二叉树"
+        "二叉树的遍历前序中序后序层次"
       ],
       "hooks": [
         "none"
@@ -478,8 +463,7 @@
       "parent": "树结构",
       "weight": "must_know",
       "prerequisites": [
-        "二叉树的遍历前序中序后序层次",
-        "树与森林的转换"
+        "二叉树的遍历前序中序后序层次"
       ],
       "hooks": [
         "none"
@@ -501,8 +485,7 @@
       "parent": "树结构",
       "weight": "must_know",
       "prerequisites": [
-        "哈夫曼树与哈夫曼编码",
-        "树与森林的转换"
+        "链表的程序设计"
       ],
       "hooks": [
         "contrast",
@@ -525,8 +508,7 @@
       "parent": "树结构",
       "weight": "key_point",
       "prerequisites": [
-        "二叉树高度叶数节点递归算法",
-        "树与森林的转换"
+        "线索二叉树"
       ],
       "hooks": [
         "acronym"
@@ -548,8 +530,7 @@
       "parent": "基础概念",
       "weight": "key_point",
       "prerequisites": [
-        "next数组的求解",
-        "二叉树的性质与存储结构"
+        "next数组的求解"
       ],
       "hooks": [
         "none"
@@ -570,9 +551,7 @@
       "label": "图的遍历（DFS/BFS）",
       "parent": "遍历技术",
       "weight": "key_point",
-      "prerequisites": [
-        "图的存储结构邻接矩阵邻接表"
-      ],
+      "prerequisites": [],
       "hooks": [
         "none"
       ],
@@ -593,8 +572,7 @@
       "parent": "树结构",
       "weight": "must_know",
       "prerequisites": [
-        "二叉树高度叶数节点递归算法",
-        "并查集及其应用"
+        "二叉树高度叶数节点递归算法"
       ],
       "hooks": [
         "none"
@@ -616,8 +594,7 @@
       "parent": "基础概念",
       "weight": "must_know",
       "prerequisites": [
-        "next数组的求解",
-        "图的存储结构邻接矩阵邻接表"
+        "next数组的求解"
       ],
       "hooks": [
         "none"
@@ -638,9 +615,7 @@
       "label": "拓扑排序",
       "parent": "排序算法",
       "weight": "must_know",
-      "prerequisites": [
-        "最短路径dijkstrafloyd"
-      ],
+      "prerequisites": [],
       "hooks": [
         "acronym"
       ],
@@ -661,8 +636,7 @@
       "parent": "基础概念",
       "weight": "must_know",
       "prerequisites": [
-        "最短路径dijkstrafloyd",
-        "图的存储结构邻接矩阵邻接表"
+        "拓扑排序"
       ],
       "hooks": [
         "acronym"
@@ -683,9 +657,7 @@
       "label": "有向图是否有环的判断",
       "parent": "图论",
       "weight": "must_know",
-      "prerequisites": [
-        "关键路径"
-      ],
+      "prerequisites": [],
       "hooks": [
         "none"
       ],
@@ -706,7 +678,8 @@
       "parent": "查找算法",
       "weight": "key_point",
       "prerequisites": [
-        "有向图是否有环的判断"
+        "拓扑排序",
+        "关键路径"
       ],
       "hooks": [
         "none"
@@ -728,7 +701,8 @@
       "parent": "排序算法",
       "weight": "key_point",
       "prerequisites": [
-        "拓扑排序"
+        "拓扑排序",
+        "关键路径"
       ],
       "hooks": [
         "none"
@@ -750,8 +724,7 @@
       "parent": "树结构",
       "weight": "key_point",
       "prerequisites": [
-        "最小生成树primkruskal",
-        "并查集及其应用"
+        "最小生成树primkruskal"
       ],
       "hooks": [
         "none"
@@ -817,8 +790,7 @@
       "parent": "基础概念",
       "weight": "must_know",
       "prerequisites": [
-        "关键路径",
-        "图的存储结构邻接矩阵邻接表"
+        "关键路径"
       ],
       "hooks": [
         "none"
@@ -840,8 +812,7 @@
       "parent": "基础概念",
       "weight": "must_know",
       "prerequisites": [
-        "除留余数法",
-        "图的存储结构邻接矩阵邻接表"
+        "除留余数法"
       ],
       "hooks": [
         "none"
@@ -863,8 +834,7 @@
       "parent": "查找算法",
       "weight": "must_know",
       "prerequisites": [
-        "散列表查找",
-        "b-树与b树"
+        "散列表查找"
       ],
       "hooks": [
         "none"
@@ -887,7 +857,7 @@
       "weight": "key_point",
       "prerequisites": [
         "拓扑排序",
-        "二叉排序树"
+        "关键路径"
       ],
       "hooks": [
         "none"
@@ -909,8 +879,7 @@
       "parent": "排序算法",
       "weight": "must_know",
       "prerequisites": [
-        "拓扑排序",
-        "插入排序直接折半希尔"
+        "拓扑排序"
       ],
       "hooks": [
         "none"
@@ -932,8 +901,7 @@
       "parent": "排序算法",
       "weight": "must_know",
       "prerequisites": [
-        "交换排序冒泡快速排序",
-        "插入排序直接折半希尔"
+        "交换排序冒泡快速排序"
       ],
       "hooks": [
         "none"
@@ -955,8 +923,7 @@
       "parent": "排序算法",
       "weight": "key_point",
       "prerequisites": [
-        "选择排序简单选择堆排序",
-        "插入排序直接折半希尔"
+        "链表的程序设计"
       ],
       "hooks": [
         "contrast",
@@ -979,7 +946,7 @@
       "parent": "排序算法",
       "weight": "key_point",
       "prerequisites": [
-        "选择排序简单选择堆排序",
+        "链表的程序设计",
         "归并排序"
       ],
       "hooks": [
@@ -1003,8 +970,7 @@
       "parent": "基础概念",
       "weight": "key_point",
       "prerequisites": [
-        "处理冲突的方法开放地址链地址法",
-        "图的存储结构邻接矩阵邻接表"
+        "处理冲突的方法开放地址链地址法"
       ],
       "hooks": [
         "contrast"
@@ -1022,50 +988,50 @@
     }
   ],
   "topo_order": [
-    "算法时间复杂度分析",
-    "算法空间复杂度分析",
-    "顺序表的实现与基本操作",
-    "栈与递归",
-    "单链表的定义与基本操作",
-    "链队的表示与实现",
-    "循环链表与双向链表",
-    "串的存储结构与模式匹配算法",
-    "next数组的求解",
-    "顺序表与链表的比较",
-    "链表的程序设计",
-    "特殊矩阵的压缩存储",
-    "广义表的定义与存储结构",
-    "栈的定义与顺序栈实现",
-    "二叉树的性质与存储结构",
-    "二叉树的遍历前序中序后序层次",
-    "链栈的表示与实现",
-    "循环队列空与满的判断",
     "kmp算法与bf算法区别",
-    "图的存储结构邻接矩阵邻接表",
-    "最短路径dijkstrafloyd",
+    "二叉树的遍历前序中序后序层次",
     "拓扑排序",
-    "关键路径",
     "有向图是否有环的判断",
-    "除留余数法",
-    "处理冲突的方法开放地址链地址法",
-    "线索二叉树",
-    "图的遍历dfsbfs",
-    "二叉排序树",
-    "顺序查找折半查找分块查找",
-    "各排序算法时间空间复杂度对比",
-    "树与森林的转换",
     "哈夫曼树与哈夫曼编码",
-    "二叉树高度叶数节点递归算法",
-    "插入排序直接折半希尔",
+    "关键路径",
     "交换排序冒泡快速排序",
+    "除留余数法",
     "选择排序简单选择堆排序",
+    "处理冲突的方法开放地址链地址法",
+    "算法时间复杂度分析",
+    "顺序表的实现与基本操作",
+    "特殊矩阵的压缩存储",
+    "图的遍历dfsbfs",
+    "线索二叉树",
+    "树与森林的转换",
+    "顺序查找折半查找分块查找",
+    "二叉排序树",
+    "插入排序直接折半希尔",
+    "各排序算法时间空间复杂度对比",
+    "算法空间复杂度分析",
+    "单链表的定义与基本操作",
+    "并查集及其应用",
     "b-树与b树",
     "散列表查找",
     "平均查找长度计算",
-    "并查集及其应用",
+    "栈与递归",
+    "循环链表与双向链表",
+    "链队的表示与实现",
+    "顺序表与链表的比较",
+    "链表的程序设计",
+    "循环队列空与满的判断",
+    "二叉树高度叶数节点递归算法",
     "最小生成树primkruskal",
+    "串的存储结构与模式匹配算法",
+    "next数组的求解",
+    "最短路径dijkstrafloyd",
+    "栈的定义与顺序栈实现",
+    "链栈的表示与实现",
     "归并排序",
     "平衡二叉树avl",
+    "广义表的定义与存储结构",
+    "二叉树的性质与存储结构",
+    "图的存储结构邻接矩阵邻接表",
     "基数排序"
   ]
 }

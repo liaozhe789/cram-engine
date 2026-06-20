@@ -55,7 +55,6 @@
       "parent": "基础概念",
       "weight": "key_point",
       "prerequisites": [
-        "数据库的4个基本概念数据dbdbmsdbs",
         "数据库管理系统的六个主要功能"
       ],
       "hooks": [
@@ -80,8 +79,7 @@
       "parent": "基础概念",
       "weight": "key_point",
       "prerequisites": [
-        "数据库的4个基本概念数据dbdbmsdbs",
-        "数据管理技术三个阶段的比较"
+        "数据库的4个基本概念数据dbdbmsdbs"
       ],
       "hooks": [
         "acronym"
@@ -104,8 +102,7 @@
       "parent": "基础概念",
       "weight": "must_know",
       "prerequisites": [
-        "数据库的4个基本概念数据dbdbmsdbs",
-        "数据库系统阶段的数据特点整体结构化共享性冗余度独立性统一管控"
+        "数据库的4个基本概念数据dbdbmsdbs"
       ],
       "hooks": [
         "none"
@@ -128,7 +125,6 @@
       "parent": "基础概念",
       "weight": "key_point",
       "prerequisites": [
-        "数据库系统的三级模式结构与两级映像",
         "数据库系统阶段的数据特点整体结构化共享性冗余度独立性统一管控"
       ],
       "hooks": [
@@ -152,8 +148,7 @@
       "parent": "基础概念",
       "weight": "key_point",
       "prerequisites": [
-        "数据库系统的三级模式结构与两级映像",
-        "数据模型的三要素数据结构操纵完整性约束"
+        "数据库系统的三级模式结构与两级映像"
       ],
       "hooks": [
         "acronym"
@@ -176,8 +171,7 @@
       "parent": "基础概念",
       "weight": "must_know",
       "prerequisites": [
-        "数据库系统的三级模式结构与两级映像",
-        "层次模型与网状模型的数据结构"
+        "数据库系统的三级模式结构与两级映像"
       ],
       "hooks": [
         "none"
@@ -200,8 +194,7 @@
       "parent": "基础概念",
       "weight": "key_point",
       "prerequisites": [
-        "关系模型的数据结构与术语",
-        "层次模型与网状模型的数据结构"
+        "关系模型的数据结构与术语"
       ],
       "hooks": [
         "contrast",
@@ -225,8 +218,7 @@
       "parent": "基础概念",
       "weight": "must_know",
       "prerequisites": [
-        "关系模型的数据结构与术语",
-        "域笛卡尔积关系目或度"
+        "关系模型的数据结构与术语"
       ],
       "hooks": [
         "none"
@@ -248,9 +240,7 @@
       "label": "关系的三种类型（基本关系/查询结果/视图）",
       "parent": "图论",
       "weight": "key_point",
-      "prerequisites": [
-        "关系模式及形式化表示候选码主码主属性非码属性全码"
-      ],
+      "prerequisites": [],
       "hooks": [
         "contrast",
         "acronym"
@@ -273,8 +263,7 @@
       "parent": "基础概念",
       "weight": "key_point",
       "prerequisites": [
-        "关系模式及形式化表示候选码主码主属性非码属性全码",
-        "域笛卡尔积关系目或度"
+        "关系模式及形式化表示候选码主码主属性非码属性全码"
       ],
       "hooks": [
         "acronym"
@@ -294,12 +283,9 @@
     {
       "id": "关系数据语言分类关系代数sql",
       "label": "关系数据语言分类（关系代数/SQL）",
-      "parent": "基础概念",
+      "parent": "Databases",
       "weight": "key_point",
-      "prerequisites": [
-        "关系模式及形式化表示候选码主码主属性非码属性全码",
-        "7种关系操作与5种基本操作"
-      ],
+      "prerequisites": [],
       "hooks": [
         "acronym"
       ],
@@ -321,8 +307,7 @@
       "parent": "基础概念",
       "weight": "must_know",
       "prerequisites": [
-        "关系模式及形式化表示候选码主码主属性非码属性全码",
-        "关系数据语言分类关系代数sql"
+        "关系模式及形式化表示候选码主码主属性非码属性全码"
       ],
       "hooks": [
         "acronym"
@@ -345,8 +330,7 @@
       "parent": "基础概念",
       "weight": "key_point",
       "prerequisites": [
-        "实体完整性与参照完整性外码被参照关系参照关系",
-        "关系数据语言分类关系代数sql"
+        "实体完整性与参照完整性外码被参照关系参照关系"
       ],
       "hooks": [
         "acronym"
@@ -369,8 +353,7 @@
       "parent": "基础概念",
       "weight": "key_point",
       "prerequisites": [
-        "实体完整性与参照完整性外码被参照关系参照关系",
-        "传统的四种二目集合运算"
+        "实体完整性与参照完整性外码被参照关系参照关系"
       ],
       "hooks": [
         "acronym"
@@ -414,11 +397,11 @@
     {
       "id": "sql的三种功能数据定义数据操纵数据控制",
       "label": "SQL的三种功能（数据定义/数据操纵/数据控制）",
-      "parent": "基础概念",
+      "parent": "Databases",
       "weight": "key_point",
       "prerequisites": [
-        "运用关系代数进行查询",
-        "专门的关系运算象集自然连接外连接"
+        "数据库管理系统的六个主要功能",
+        "数据管理技术三个阶段的比较"
       ],
       "hooks": [
         "contrast",
@@ -439,10 +422,9 @@
     {
       "id": "sql数据定义模式基本表索引的创建删除修改",
       "label": "SQL数据定义（模式/基本表/索引的创建删除修改）",
-      "parent": "基础概念",
+      "parent": "Databases",
       "weight": "key_point",
       "prerequisites": [
-        "运用关系代数进行查询",
         "sql的三种功能数据定义数据操纵数据控制"
       ],
       "hooks": [
@@ -463,10 +445,9 @@
     {
       "id": "sql单表查询",
       "label": "SQL单表查询",
-      "parent": "基础概念",
+      "parent": "Databases",
       "weight": "must_know",
       "prerequisites": [
-        "运用关系代数进行查询",
         "sql数据定义模式基本表索引的创建删除修改"
       ],
       "hooks": [
@@ -487,11 +468,10 @@
     {
       "id": "sql连接查询",
       "label": "SQL连接查询",
-      "parent": "基础概念",
+      "parent": "Databases",
       "weight": "must_know",
       "prerequisites": [
-        "sql单表查询",
-        "sql数据定义模式基本表索引的创建删除修改"
+        "sql单表查询"
       ],
       "hooks": [
         "none"
@@ -511,11 +491,10 @@
     {
       "id": "sql嵌套查询",
       "label": "SQL嵌套查询",
-      "parent": "基础概念",
+      "parent": "Databases",
       "weight": "must_know",
       "prerequisites": [
-        "sql连接查询",
-        "sql数据定义模式基本表索引的创建删除修改"
+        "sql连接查询"
       ],
       "hooks": [
         "none"
@@ -535,11 +514,10 @@
     {
       "id": "sql集合查询",
       "label": "SQL集合查询",
-      "parent": "基础概念",
+      "parent": "Databases",
       "weight": "key_point",
       "prerequisites": [
-        "sql嵌套查询",
-        "sql数据定义模式基本表索引的创建删除修改"
+        "sql嵌套查询"
       ],
       "hooks": [
         "none"
@@ -559,11 +537,11 @@
     {
       "id": "sql数据更新insertupdatedelete",
       "label": "SQL数据更新（INSERT/UPDATE/DELETE）",
-      "parent": "基础概念",
+      "parent": "Databases",
       "weight": "key_point",
       "prerequisites": [
-        "sql嵌套查询",
-        "sql集合查询"
+        "域笛卡尔积关系目或度",
+        "sql的三种功能数据定义数据操纵数据控制"
       ],
       "hooks": [
         "acronym"
@@ -586,8 +564,7 @@
       "parent": "基础概念",
       "weight": "key_point",
       "prerequisites": [
-        "sql嵌套查询",
-        "sql数据更新insertupdatedelete"
+        "运用关系代数进行查询"
       ],
       "hooks": [
         "none"
@@ -633,8 +610,7 @@
       "parent": "基础概念",
       "weight": "must_know",
       "prerequisites": [
-        "sql嵌套查询",
-        "空值处理"
+        "运用关系代数进行查询"
       ],
       "hooks": [
         "none"
@@ -657,8 +633,8 @@
       "parent": "基础概念",
       "weight": "key_point",
       "prerequisites": [
-        "数据库安全性概述与不安全因素",
-        "空值处理"
+        "数据库的4个基本概念数据dbdbmsdbs",
+        "视图的定义查询更新及作用"
       ],
       "hooks": [
         "contrast",
@@ -683,8 +659,7 @@
       "parent": "基础概念",
       "weight": "must_know",
       "prerequisites": [
-        "数据库安全性概述与不安全因素",
-        "用户身份鉴别方法静态动态生物特征智能卡"
+        "数据库安全性概述与不安全因素"
       ],
       "hooks": [
         "none"
@@ -707,7 +682,6 @@
       "parent": "基础概念",
       "weight": "must_know",
       "prerequisites": [
-        "自主存取控制grantrevoke",
         "用户身份鉴别方法静态动态生物特征智能卡"
       ],
       "hooks": [
@@ -731,8 +705,8 @@
       "parent": "基础概念",
       "weight": "key_point",
       "prerequisites": [
-        "数据库角色",
-        "用户身份鉴别方法静态动态生物特征智能卡"
+        "用户身份鉴别方法静态动态生物特征智能卡",
+        "数据库角色"
       ],
       "hooks": [
         "acronym"
@@ -755,8 +729,7 @@
       "parent": "图论",
       "weight": "key_point",
       "prerequisites": [
-        "视图的定义查询更新及作用",
-        "关系的三种类型基本关系查询结果视图"
+        "视图的定义查询更新及作用"
       ],
       "hooks": [
         "none"
@@ -779,8 +752,7 @@
       "parent": "基础概念",
       "weight": "must_know",
       "prerequisites": [
-        "数据库角色",
-        "强制存取控制方法"
+        "数据库角色"
       ],
       "hooks": [
         "none"
@@ -803,8 +775,7 @@
       "parent": "基础概念",
       "weight": "must_know",
       "prerequisites": [
-        "实体完整性primary-key定义与检查",
-        "强制存取控制方法"
+        "实体完整性primary-key定义与检查"
       ],
       "hooks": [
         "none"
@@ -827,8 +798,7 @@
       "parent": "基础概念",
       "weight": "must_know",
       "prerequisites": [
-        "参照完整性foreign-key定义与检查",
-        "强制存取控制方法"
+        "参照完整性foreign-key定义与检查"
       ],
       "hooks": [
         "none"
@@ -851,8 +821,7 @@
       "parent": "基础概念",
       "weight": "must_know",
       "prerequisites": [
-        "用户定义的完整性属性约束元组约束",
-        "强制存取控制方法"
+        "用户定义的完整性属性约束元组约束"
       ],
       "hooks": [
         "acronym"
@@ -875,8 +844,7 @@
       "parent": "基础概念",
       "weight": "must_know",
       "prerequisites": [
-        "触发器定义执行删除",
-        "强制存取控制方法"
+        "触发器定义执行删除"
       ],
       "hooks": [
         "none"
@@ -899,8 +867,7 @@
       "parent": "基础概念",
       "weight": "must_know",
       "prerequisites": [
-        "函数依赖完全部分传递",
-        "强制存取控制方法"
+        "函数依赖完全部分传递"
       ],
       "hooks": [
         "contrast",
@@ -924,8 +891,7 @@
       "parent": "基础概念",
       "weight": "key_point",
       "prerequisites": [
-        "范式1nf2nf3nfbcnf4nf",
-        "强制存取控制方法"
+        "范式1nf2nf3nfbcnf4nf"
       ],
       "hooks": [
         "acronym"
@@ -948,8 +914,7 @@
       "parent": "基础概念",
       "weight": "must_know",
       "prerequisites": [
-        "范式1nf2nf3nfbcnf4nf",
-        "多值依赖"
+        "范式1nf2nf3nfbcnf4nf"
       ],
       "hooks": [
         "acronym"
@@ -972,8 +937,8 @@
       "parent": "基础概念",
       "weight": "key_point",
       "prerequisites": [
-        "数据库设计的基本步骤需求分析概念逻辑物理实施运维",
-        "多值依赖"
+        "数据库系统阶段的数据特点整体结构化共享性冗余度独立性统一管控",
+        "域笛卡尔积关系目或度"
       ],
       "hooks": [
         "contrast",
@@ -997,8 +962,7 @@
       "parent": "图论",
       "weight": "must_know",
       "prerequisites": [
-        "视图的定义查询更新及作用",
-        "视图机制与审计与加密"
+        "视图的定义查询更新及作用"
       ],
       "hooks": [
         "none"
@@ -1021,8 +985,7 @@
       "parent": "基础概念",
       "weight": "must_know",
       "prerequisites": [
-        "数据库设计的基本步骤需求分析概念逻辑物理实施运维",
-        "e-r模型实体属性联系类型111nmn"
+        "数据库设计的基本步骤需求分析概念逻辑物理实施运维"
       ],
       "hooks": [
         "none"
@@ -1045,8 +1008,7 @@
       "parent": "基础概念",
       "weight": "key_point",
       "prerequisites": [
-        "数据模型的优化水平分解垂直分解",
-        "e-r模型实体属性联系类型111nmn"
+        "数据模型的优化水平分解垂直分解"
       ],
       "hooks": [
         "none"
@@ -1069,8 +1031,8 @@
       "parent": "基础概念",
       "weight": "key_point",
       "prerequisites": [
-        "数据模型的优化水平分解垂直分解",
-        "数据库物理结构设计存取方法存储结构"
+        "数据库系统阶段的数据特点整体结构化共享性冗余度独立性统一管控",
+        "域笛卡尔积关系目或度"
       ],
       "hooks": [
         "acronym"
@@ -1090,11 +1052,10 @@
     {
       "id": "过程化sql的块结构",
       "label": "过程化SQL的块结构",
-      "parent": "基础概念",
+      "parent": "Databases",
       "weight": "key_point",
       "prerequisites": [
-        "数据模型的优化水平分解垂直分解",
-        "数据库系统的组成硬件平台软件平台人员"
+        "sql嵌套查询"
       ],
       "hooks": [
         "contrast",
@@ -1119,7 +1080,6 @@
       "parent": "基础概念",
       "weight": "must_know",
       "prerequisites": [
-        "数据模型的优化水平分解垂直分解",
         "过程化sql的块结构"
       ],
       "hooks": [
@@ -1145,8 +1105,7 @@
       "parent": "基础概念",
       "weight": "must_know",
       "prerequisites": [
-        "游标的定义与使用",
-        "过程化sql的块结构"
+        "游标的定义与使用"
       ],
       "hooks": [
         "contrast"
@@ -1169,8 +1128,7 @@
       "parent": "基础概念",
       "weight": "must_know",
       "prerequisites": [
-        "存储过程与存储函数的定义及区别",
-        "过程化sql的块结构"
+        "存储过程与存储函数的定义及区别"
       ],
       "hooks": [
         "none"
@@ -1193,8 +1151,7 @@
       "parent": "基础概念",
       "weight": "must_know",
       "prerequisites": [
-        "事务的acid特性",
-        "过程化sql的块结构"
+        "事务的acid特性"
       ],
       "hooks": [
         "acronym"
@@ -1217,8 +1174,7 @@
       "parent": "基础概念",
       "weight": "must_know",
       "prerequisites": [
-        "故障的种类事务内部故障系统故障介质故障",
-        "过程化sql的块结构"
+        "故障的种类事务内部故障系统故障介质故障"
       ],
       "hooks": [
         "none"
@@ -1241,8 +1197,7 @@
       "parent": "基础概念",
       "weight": "must_know",
       "prerequisites": [
-        "数据转储的方法与特点",
-        "过程化sql的块结构"
+        "数据转储的方法与特点"
       ],
       "hooks": [
         "none"
@@ -1265,8 +1220,7 @@
       "parent": "基础概念",
       "weight": "must_know",
       "prerequisites": [
-        "日志文件的内容与登记原则",
-        "过程化sql的块结构"
+        "日志文件的内容与登记原则"
       ],
       "hooks": [
         "none"
@@ -1286,50 +1240,50 @@
   ],
   "topo_order": [
     "数据库的4个基本概念数据dbdbmsdbs",
-    "数据库管理系统的六个主要功能",
-    "数据管理技术三个阶段的比较",
-    "数据库系统阶段的数据特点整体结构化共享性冗余度独立性统一管控",
     "数据库系统的三级模式结构与两级映像",
-    "数据模型的三要素数据结构操纵完整性约束",
-    "层次模型与网状模型的数据结构",
     "关系模型的数据结构与术语",
-    "域笛卡尔积关系目或度",
     "关系模式及形式化表示候选码主码主属性非码属性全码",
+    "实体完整性与参照完整性外码被参照关系参照关系",
     "关系的三种类型基本关系查询结果视图",
     "视图的定义查询更新及作用",
-    "7种关系操作与5种基本操作",
-    "视图机制与审计与加密",
     "e-r图向关系模型的转换",
     "关系数据语言分类关系代数sql",
-    "实体完整性与参照完整性外码被参照关系参照关系",
+    "数据库管理系统的六个主要功能",
+    "数据库系统阶段的数据特点整体结构化共享性冗余度独立性统一管控",
+    "层次模型与网状模型的数据结构",
+    "域笛卡尔积关系目或度",
+    "7种关系操作与5种基本操作",
     "传统的四种二目集合运算",
     "专门的关系运算象集自然连接外连接",
     "运用关系代数进行查询",
-    "sql的三种功能数据定义数据操纵数据控制",
-    "sql数据定义模式基本表索引的创建删除修改",
-    "sql单表查询",
-    "sql连接查询",
-    "sql嵌套查询",
-    "sql集合查询",
-    "sql数据更新insertupdatedelete",
-    "空值处理",
     "数据库安全性概述与不安全因素",
-    "用户身份鉴别方法静态动态生物特征智能卡",
     "自主存取控制grantrevoke",
+    "用户身份鉴别方法静态动态生物特征智能卡",
     "数据库角色",
-    "强制存取控制方法",
     "实体完整性primary-key定义与检查",
     "参照完整性foreign-key定义与检查",
     "用户定义的完整性属性约束元组约束",
     "触发器定义执行删除",
     "函数依赖完全部分传递",
     "范式1nf2nf3nfbcnf4nf",
-    "多值依赖",
     "数据库设计的基本步骤需求分析概念逻辑物理实施运维",
-    "e-r模型实体属性联系类型111nmn",
     "数据模型的优化水平分解垂直分解",
-    "数据库物理结构设计存取方法存储结构",
+    "视图机制与审计与加密",
+    "数据管理技术三个阶段的比较",
+    "数据模型的三要素数据结构操纵完整性约束",
+    "e-r模型实体属性联系类型111nmn",
     "数据库系统的组成硬件平台软件平台人员",
+    "空值处理",
+    "强制存取控制方法",
+    "多值依赖",
+    "数据库物理结构设计存取方法存储结构",
+    "sql的三种功能数据定义数据操纵数据控制",
+    "sql数据定义模式基本表索引的创建删除修改",
+    "sql单表查询",
+    "sql连接查询",
+    "sql嵌套查询",
+    "sql数据更新insertupdatedelete",
+    "sql集合查询",
     "过程化sql的块结构",
     "游标的定义与使用",
     "存储过程与存储函数的定义及区别",

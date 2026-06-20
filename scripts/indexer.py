@@ -42,7 +42,7 @@ def build_index(course: str) -> dict:
         weight = 'must_know' if (raw_id in must_know_ids or node_id in must_know_ids) else 'key_point'
         content_summary = _find_content(label, extracted_texts)
         hooks = _infer_hooks(label, content_summary, config.get('language', 'zh'))
-        prereqs, parent = _infer_prerequisites_and_parent(i, nodes, label, config)
+        prereqs, parent = _infer_prerequisites_and_parent(i, nodes, label, content_summary, config)
         exam_types = config.get('exam_types', [])
         exam_types_map = {et: True for et in exam_types}
 
@@ -134,6 +134,7 @@ def _infer_prerequisites_and_parent(
     current_idx: int,
     existing_nodes: list,
     label: str,
+    content_summary: str,
     config: dict,
 ) -> tuple:
     """推断父类目和前置依赖。支持中英文关键词。"""
@@ -194,26 +195,75 @@ def _infer_prerequisites_and_parent(
                 parent = ch.get('name', parent)
                 break
 
-    # 前置依赖：同一 parent 下的前一个节点（最多 2 个）
+    # 前置依赖：config 中显式声明的优先
+    explicit_prereqs = config.get('prerequisites', {})
     prereqs = []
-    same_parent = [n for n in existing_nodes if n.get('parent') == parent]
-    if same_parent:
-        # 取最近的一个 must_know 节点
+    node_index = current_idx + 1  # 1-based index matching config keys
+    if str(node_index) in explicit_prereqs:
+        prereqs = [nid for nid in explicit_prereqs[str(node_index)] if any(nd['id'] == nid for nd in existing_nodes)]
+
+    # 如果没有显式依赖，用内容摘要检测
+    if not prereqs:
+        prereqs = _detect_content_deps(label, content_summary, existing_nodes)
+
+    # 如果仍没有，同 parent 下取最近一个 must_know 作为弱依赖
+    if not prereqs:
+        same_parent = [n for n in existing_nodes if n.get('parent') == parent]
         must_candidates = [n['id'] for n in same_parent if n.get('weight') == 'must_know']
         if must_candidates:
             prereqs.append(must_candidates[-1])
-        # 再取最近的一个非 must_know（避免重复）
-        other_candidates = [n['id'] for n in same_parent if n.get('weight') != 'must_know']
-        if other_candidates and (not prereqs or prereqs[-1] != other_candidates[-1]):
-            prereqs.append(other_candidates[-1])
-        # 最多取 2 个
-        prereqs = prereqs[-2:]
-
-    # 如果没有任何前置依赖且不是第一个节点，尝试跨 parent 取前一个节点
-    if not prereqs and existing_nodes:
-        prereqs.append(existing_nodes[-1]['id'])
+        elif same_parent:
+            prereqs.append(same_parent[-1]['id'])
 
     return prereqs, parent
+
+
+def _detect_content_deps(label: str, content_summary: str, existing_nodes: list) -> list:
+    """基于内容摘要检测真实依赖关系。
+
+    只检测有语义意义的长关键词（>=3 chars），排除通用虚词，
+    且只在同 parent 的候选节点中搜索，避免跨领域的误匹配。
+    """
+    if not content_summary or not existing_nodes:
+        return []
+
+    # 通用虚词/停用词，它们不应被视为"依赖证据"
+    stop_words = {
+        'data', 'type', 'model', 'system', 'basic', 'used', 'using',
+        '数据', '类型', '模型', '系统', '基本', '使用', '实现', '结构',
+        '方法', '主要', '定义', '比较', '应用', '方式', '关系',
+    }
+
+    summary_lower = content_summary.lower()
+    deps = []
+
+    for node in existing_nodes:
+        node_label = node['label'].lower()
+
+        # 提取关键词：去掉括号、斜杠，取 >= 3 字符的词
+        keywords = node_label.replace('(', ' ').replace(')', ' ')                              .replace('/', ' ').replace('、', ' ')                              .replace(',', ' ').split()
+        significant = [kw for kw in keywords
+                       if len(kw) >= 3 and kw not in stop_words]
+
+        if not significant:
+            continue
+
+        # 必须在 content_summary 中出现至少 1 个关键词
+        if not any(kw in summary_lower for kw in significant):
+            continue
+
+        # 附加约束：同 parent 才考虑为依赖（跨 parent 的误匹配太多）
+        if node.get('parent') != existing_nodes[0].get('parent') if existing_nodes else None:
+            # 跨 parent 只在关键词 >= 4 chars 时考虑
+            long_match = any(kw in summary_lower for kw in significant if len(kw) >= 4)
+            if not long_match:
+                continue
+
+        deps.append(node['id'])
+        if len(deps) >= 2:
+            break
+
+    return deps
 
 
 def _topological_sort(nodes: list) -> list:

@@ -74,8 +74,7 @@
       "parent": "基础概念",
       "weight": "must_know",
       "prerequisites": [
-        "网络体系结构五层协议协议三要素协议与服务ositcpip对比",
-        "物理层接口特性通信方式编码方式香农公式复用技术"
+        "网络体系结构五层协议协议三要素协议与服务ositcpip对比"
       ],
       "hooks": [
         "acronym"
@@ -97,8 +96,8 @@
       "parent": "基础概念",
       "weight": "must_know",
       "prerequisites": [
-        "数据链路层三个基本问题crcpppcsmacdmac地址vlan",
-        "物理层接口特性通信方式编码方式香农公式复用技术"
+        "网络体系结构五层协议协议三要素协议与服务ositcpip对比",
+        "数据链路层三个基本问题crcpppcsmacdmac地址vlan"
       ],
       "hooks": [
         "absurd",
@@ -121,8 +120,8 @@
       "parent": "基础概念",
       "weight": "must_know",
       "prerequisites": [
-        "网络层ip地址分类cidrarpicmpipv6ripospfbgpnatvpn",
-        "物理层接口特性通信方式编码方式香农公式复用技术"
+        "网络体系结构五层协议协议三要素协议与服务ositcpip对比",
+        "网络层ip地址分类cidrarpicmpipv6ripospfbgpnatvpn"
       ],
       "hooks": [
         "contrast",
@@ -146,8 +145,7 @@
       "parent": "基础概念",
       "weight": "must_know",
       "prerequisites": [
-        "运输层tcpudp对比端口号停止等待协议流量控制拥塞控制三次握手四次挥手",
-        "物理层接口特性通信方式编码方式香农公式复用技术"
+        "运输层tcpudp对比端口号停止等待协议流量控制拥塞控制三次握手四次挥手"
       ],
       "hooks": [
         "absurd",
@@ -170,8 +168,7 @@
       "parent": "基础概念",
       "weight": "key_point",
       "prerequisites": [
-        "应用层dnshttpftp电子邮件协议dhcp",
-        "物理层接口特性通信方式编码方式香农公式复用技术"
+        "应用层dnshttpftp电子邮件协议dhcp"
       ],
       "hooks": [
         "none"
@@ -191,11 +188,11 @@
   "topo_order": [
     "计算机网络概述三网融合互联网特点交换技术性能指标",
     "网络体系结构五层协议协议三要素协议与服务ositcpip对比",
-    "物理层接口特性通信方式编码方式香农公式复用技术",
     "数据链路层三个基本问题crcpppcsmacdmac地址vlan",
     "网络层ip地址分类cidrarpicmpipv6ripospfbgpnatvpn",
     "运输层tcpudp对比端口号停止等待协议流量控制拥塞控制三次握手四次挥手",
     "应用层dnshttpftp电子邮件协议dhcp",
+    "物理层接口特性通信方式编码方式香农公式复用技术",
     "计算题时延计算crc子网划分cidr最长前缀匹配拥塞窗口变化"
   ]
 }

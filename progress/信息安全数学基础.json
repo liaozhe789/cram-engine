@@ -1,0 +1,560 @@
+{
+  "course": "信息安全数学基础",
+  "current_stage": 2,
+  "current_node_id": "zheng-chu-yu-dai-yu-chu-fa",
+  "user_level": "intermediate",
+  "stage2_pace": "normal",
+  "stage2_position": 0,
+  "stage3_position": 0,
+  "stage3_current_submode": null,
+  "nodes": {
+    "整除与带余除法": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-20T07:59:41Z"
+    },
+    "最大公因数与辗转相除法": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-20T07:59:41Z"
+    },
+    "扩展辗转相除法与贝祖等式": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-20T07:59:41Z"
+    },
+    "最小公倍数": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-20T07:59:41Z"
+    },
+    "算术基本定理与标准分解式": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-20T07:59:41Z"
+    },
+    "同余的基本性质": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-20T07:59:41Z"
+    },
+    "完全剩余系": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-20T07:59:41Z"
+    },
+    "简化剩余系": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-20T07:59:41Z"
+    },
+    "欧拉函数": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-20T07:59:41Z"
+    },
+    "欧拉定理": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-20T07:59:41Z"
+    },
+    "费马小定理及应用": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-20T07:59:41Z"
+    },
+    "模幂运算与平方-乘算法": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-20T07:59:41Z"
+    },
+    "一次同余方程求解": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-20T07:59:41Z"
+    },
+    "逆元求解扩展辗转相除法": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-20T07:59:41Z"
+    },
+    "中国剩余定理-crt": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-20T07:59:41Z"
+    },
+    "一次同余方程组与解数": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-20T07:59:41Z"
+    },
+    "仿射密码算法": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-20T07:59:41Z"
+    },
+    "rsa公钥密码算法加密解密密钥生成正确性证明": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-20T07:59:41Z"
+    },
+    "二次同余与二次剩余": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-20T07:59:41Z"
+    },
+    "勒让德符号": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-20T07:59:41Z"
+    },
+    "欧拉判别法": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-20T07:59:41Z"
+    },
+    "二次互反律": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-20T07:59:41Z"
+    },
+    "原根与阶的定义及性质": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-20T07:59:41Z"
+    },
+    "原根阶的证明": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-20T07:59:41Z"
+    },
+    "素数的原根求解": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-20T07:59:41Z"
+    },
+    "离散对数": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-20T07:59:41Z"
+    },
+    "elgamal密码算法": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-20T07:59:41Z"
+    },
+    "群的基本概念": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-20T07:59:41Z"
+    },
+    "环与域基础": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-20T07:59:41Z"
+    },
+    "有限域基本概念": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-20T07:59:41Z"
+    },
+    "椭圆曲线基本概念与weierstrass方程": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-20T07:59:41Z"
+    },
+    "椭圆曲线在密码学中的应用": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-20T07:59:41Z"
+    }
+  },
+  "completed_nodes": [],
+  "error_nodes": [],
+  "stubborn_nodes": [],
+  "session_history": []
+}

@@ -1,0 +1,719 @@
+{
+  "course": "信息安全数学基础",
+  "version": 2,
+  "nodes": [
+    {
+      "id": "整除与带余除法",
+      "label": "整除与带余除法",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "单项选择题": true,
+        "填空题": true,
+        "计算题": true,
+        "证明题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 0
+    },
+    {
+      "id": "最大公因数与辗转相除法",
+      "label": "最大公因数与辗转相除法",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "整除与带余除法"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "单项选择题": true,
+        "填空题": true,
+        "计算题": true,
+        "证明题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 1
+    },
+    {
+      "id": "扩展辗转相除法与贝祖等式",
+      "label": "扩展辗转相除法与贝祖等式",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "最大公因数与辗转相除法"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "单项选择题": true,
+        "填空题": true,
+        "计算题": true,
+        "证明题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 2
+    },
+    {
+      "id": "最小公倍数",
+      "label": "最小公倍数",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "扩展辗转相除法与贝祖等式"
+      ],
+      "hooks": [
+        "absurd"
+      ],
+      "exam_types_map": {
+        "单项选择题": true,
+        "填空题": true,
+        "计算题": true,
+        "证明题": true
+      },
+      "content_summary": "-----|\n| 整除 | $a \\mid b \\iff \\exists c,\\; b=ac$ |\n| 带余除法 | $a = bq + r$，$0 \\le r < b$，$q$ 和 $r$ **唯一** |\n| 最大公因数 | $d = \\gcd(a,b)$，辗转相除法 |\n| 贝祖等式 | $\\exists x,y \\in \\mathbb{Z},\\; ax+by=\\gcd(a,b)$ |\n| 最小公倍数 | $\\operatorname{lcm}(a,b) = \\frac{|ab|}{\\gcd(a,b)}$ |\n| 互素 | $\\gcd(a,b)=1$ |\n| 算术基本定理 | 任意 $n>1$ 唯一分解为素数幂乘积 |\n\n### 必会操作\n\n- **辗转相除法** 求 $\\gcd$（试卷A-1、作业题）\n- **扩展辗转相除法** 求贝祖系数（试卷A-2、试卷B-3）\n- **标准分解式**（ ... -1\\pmod{365}$ 的解的个数。\n- (A) 0\n- (B) 1\n- (C) 2\n- (D) 4\n\n**7.** 整数 $100$ 的标准分解式是？\n- (A) $4\\times 25$\n- (B) $2\\times 50$\n- (C) $100\\times 1$\n- (D) $2^{2}\\times 5^{2}$\n\n**8.** 计算整数 $120,150,210,35$ 的最大公因数和最小公倍数。\n- (A) $\\gcd=5,\\;\\operatorname{lcm}=4200$\n- (B) $\\gcd=6,\\;\\operatorname{lcm}=4100$\n- (C) $\\gcd=7,\\;\\operatorname{lcm}=4300$\n- (D) $\\gcd=8,\\;\\operatorname{lcm}=4400$\n\n**9.** 以下算法中，属于**对",
+      "source_materials": [],
+      "order_index": 3
+    },
+    {
+      "id": "算术基本定理与标准分解式",
+      "label": "算术基本定理与标准分解式",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "最小公倍数"
+      ],
+      "hooks": [
+        "absurd"
+      ],
+      "exam_types_map": {
+        "单项选择题": true,
+        "填空题": true,
+        "计算题": true,
+        "证明题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 4
+    },
+    {
+      "id": "同余的基本性质",
+      "label": "同余的基本性质",
+      "parent": "基础概念",
+      "weight": "key_point",
+      "prerequisites": [
+        "算术基本定理与标准分解式"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "单项选择题": true,
+        "填空题": true,
+        "计算题": true,
+        "证明题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 5
+    },
+    {
+      "id": "完全剩余系",
+      "label": "完全剩余系",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "算术基本定理与标准分解式"
+      ],
+      "hooks": [
+        "absurd"
+      ],
+      "exam_types_map": {
+        "单项选择题": true,
+        "填空题": true,
+        "计算题": true,
+        "证明题": true
+      },
+      "content_summary": "1 是否为素数\n- 求 $\\gcd(144,84)$ 和 $\\operatorname{lcm}(144,84)$\n- 求 $72a+108b+96c$ 所能表示的最小正整数\n\n---\n\n## 第2章 同余 ★★★★☆\n\n### 核心概念\n\n| 概念 | 要点 |\n|------|------|\n| 同余 | $a \\equiv b \\pmod{n} \\iff n \\mid (a-b)$ |\n| 完全剩余系 | 模 $m$ 下恰好覆盖 $\\{0,1,\\dots,m-1\\}$ 各一次 |\n| 简化剩余系 | 完全剩余系中与 $m$ 互素的那些类 |\n| 欧拉函数 | $\\varphi(n)=n\\prod_{p\\mid n}(1-\\frac{1}{p})$ |\n| 欧拉定理 | $\\gcd(a,n)=1 \\;\\Rightarrow\\; a^{\\varphi(n)}\\equiv 1 \\pmod{n}$ | ... 密码系统的五元组 $\\langle P,C,K,E,D\\rangle$ 分别代表什么？\n- (A) 明文、密文、密钥、加密算法、解密算法\n- (B) 明文、密文、加密、解密、函数\n- (C) 输入、输出、密钥、加密、解密\n- (D) 明文、密文、密钥、函数、解密\n\n**4.** 设 $m=10$，$a=7$，$b=5$，则下列哪个选项可以构成形如 $a\\times k+b$ 的一个模 $10$ 的完全剩余系？\n- (A) $5, 12, 19, 26, 33, 40, 47, 54, 61, 68$\n- (B) $5, 12, 19, 26, 33, 40, 47, 54, 61, 72$\n- (C) $5, 12, 19, 26, 33, 40, 47, 54, 61, 70$\n- (D) $5, 12, 19, 26, 33, 40, 47, 54, 61, 79$",
+      "source_materials": [],
+      "order_index": 6
+    },
+    {
+      "id": "简化剩余系",
+      "label": "简化剩余系",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "完全剩余系"
+      ],
+      "hooks": [
+        "absurd"
+      ],
+      "exam_types_map": {
+        "单项选择题": true,
+        "填空题": true,
+        "计算题": true,
+        "证明题": true
+      },
+      "content_summary": "rsa，欧拉函数条件原则，同余式方程组，二次同余，原根阶证明，原根阶，离散对数的联系，2的很多次方是星期几，孙子定理，求逆元，平方剩余跟勒让德符号，平时作业和课后作业，简化剩余系，费马小定理 ... (144,84)$\n- 求 $72a+108b+96c$ 所能表示的最小正整数\n\n---\n\n## 第2章 同余 ★★★★☆\n\n### 核心概念\n\n| 概念 | 要点 |\n|------|------|\n| 同余 | $a \\equiv b \\pmod{n} \\iff n \\mid (a-b)$ |\n| 完全剩余系 | 模 $m$ 下恰好覆盖 $\\{0,1,\\dots,m-1\\}$ 各一次 |\n| 简化剩余系 | 完全剩余系中与 $m$ 互素的那些类 |\n| 欧拉函数 | $\\varphi(n)=n\\prod_{p\\mid n}(1-\\frac{1}{p})$ |\n| 欧拉定理 | $\\gcd(a,n)=1 \\;\\Rightarrow\\; a^{\\varphi(n)}\\equiv 1 \\pmod{n}$ |\n| 费马小定理 | $p$ 素数 $\\;\\Rightarrow\\; a^{p}\\equiv a",
+      "source_materials": [],
+      "order_index": 7
+    },
+    {
+      "id": "欧拉函数",
+      "label": "欧拉函数",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "完全剩余系",
+        "简化剩余系"
+      ],
+      "hooks": [
+        "absurd",
+        "acronym"
+      ],
+      "exam_types_map": {
+        "单项选择题": true,
+        "填空题": true,
+        "计算题": true,
+        "证明题": true
+      },
+      "content_summary": "rsa，欧拉函数条件原则，同余式方程组，二次同余，原根阶证明，原根阶，离散对数的联系，2的很多次方是星期几，孙子定理，求逆元，平方剩余跟勒让德符号，平时作业和课后作业，简化剩余系，费马小定理 ... 表示的最小正整数\n\n---\n\n## 第2章 同余 ★★★★☆\n\n### 核心概念\n\n| 概念 | 要点 |\n|------|------|\n| 同余 | $a \\equiv b \\pmod{n} \\iff n \\mid (a-b)$ |\n| 完全剩余系 | 模 $m$ 下恰好覆盖 $\\{0,1,\\dots,m-1\\}$ 各一次 |\n| 简化剩余系 | 完全剩余系中与 $m$ 互素的那些类 |\n| 欧拉函数 | $\\varphi(n)=n\\prod_{p\\mid n}(1-\\frac{1}{p})$ |\n| 欧拉定理 | $\\gcd(a,n)=1 \\;\\Rightarrow\\; a^{\\varphi(n)}\\equiv 1 \\pmod{n}$ |\n| 费马小定理 | $p$ 素数 $\\;\\Rightarrow\\; a^{p}\\equiv a \\pmod{p}$ |\n| 模幂运算 | 平方-乘算法 ( ... \\_\\_\\_$。\n\n**3.** 公钥密码系统的六元组各分量分别是\n$\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_$。\n\n**4.** 2015 年 3 月 1 日是星期日，问从该天算起，第 $20150301$ 天是星期\n$\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_$。\n\n**5.** 计算欧拉函数 $\\varphi(143)=\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_$。\n（提示：$143=11\\times 13$",
+      "source_materials": [],
+      "order_index": 8
+    },
+    {
+      "id": "欧拉定理",
+      "label": "欧拉定理",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "完全剩余系",
+        "简化剩余系"
+      ],
+      "hooks": [
+        "absurd"
+      ],
+      "exam_types_map": {
+        "单项选择题": true,
+        "填空题": true,
+        "计算题": true,
+        "证明题": true
+      },
+      "content_summary": "-----|------|\n| 同余 | $a \\equiv b \\pmod{n} \\iff n \\mid (a-b)$ |\n| 完全剩余系 | 模 $m$ 下恰好覆盖 $\\{0,1,\\dots,m-1\\}$ 各一次 |\n| 简化剩余系 | 完全剩余系中与 $m$ 互素的那些类 |\n| 欧拉函数 | $\\varphi(n)=n\\prod_{p\\mid n}(1-\\frac{1}{p})$ |\n| 欧拉定理 | $\\gcd(a,n)=1 \\;\\Rightarrow\\; a^{\\varphi(n)}\\equiv 1 \\pmod{n}$ |\n| 费马小定理 | $p$ 素数 $\\;\\Rightarrow\\; a^{p}\\equiv a \\pmod{p}$ |\n| 模幂运算 | 平方-乘算法 (square-and-multiply) |\n\n### 必会公式\n\n- $\\varphi(p)=p-1$（$p$",
+      "source_materials": [],
+      "order_index": 9
+    },
+    {
+      "id": "费马小定理及应用",
+      "label": "费马小定理及应用",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "欧拉定理"
+      ],
+      "hooks": [
+        "absurd"
+      ],
+      "exam_types_map": {
+        "单项选择题": true,
+        "填空题": true,
+        "计算题": true,
+        "证明题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 10
+    },
+    {
+      "id": "模幂运算与平方-乘算法",
+      "label": "模幂运算与平方-乘算法",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "费马小定理及应用"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "单项选择题": true,
+        "填空题": true,
+        "计算题": true,
+        "证明题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 11
+    },
+    {
+      "id": "一次同余方程求解",
+      "label": "一次同余方程求解",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "模幂运算与平方-乘算法"
+      ],
+      "hooks": [
+        "absurd",
+        "acronym"
+      ],
+      "exam_types_map": {
+        "单项选择题": true,
+        "填空题": true,
+        "计算题": true,
+        "证明题": true
+      },
+      "content_summary": "--|\n| 一次同余方程 | $ax \\equiv b \\pmod{m}$，有解 $\\iff \\gcd(a,m) \\mid b$ |\n| 逆元 | $a^{-1} \\bmod m$ 存在 $\\iff \\gcd(a,m)=1$，用扩展辗转相除法求 |\n| 中国剩余定理 (CRT) | 模数两两互素的同余方程组有唯一解（模乘积意义下） |\n| RSA | 基于大整数分解困难性的公钥密码 |\n\n### 一次同余方程求解步骤\n\n$ax \\equiv b \\pmod{m}$，$d=\\gcd(a,m)$：\n\n1. 若 $d \\nmid b$，无解\n2. 若 $d \\mid b$，两边除以 $d$，化为 $a''x \\equiv b'' \\pmod{m'}$，其中 $\\gcd(a',m')=1$\n3. 求 $a'$ 模 $m'$ 的逆元，两边同乘即得\n\n### 中国剩余定理 (CRT) 标准步骤\n\n对于 $\\begin",
+      "source_materials": [],
+      "order_index": 12
+    },
+    {
+      "id": "逆元求解扩展辗转相除法",
+      "label": "逆元求解（扩展辗转相除法）",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "一次同余方程求解"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "单项选择题": true,
+        "填空题": true,
+        "计算题": true,
+        "证明题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 13
+    },
+    {
+      "id": "中国剩余定理-crt",
+      "label": "中国剩余定理 CRT",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "一次同余方程求解"
+      ],
+      "hooks": [
+        "absurd",
+        "acronym"
+      ],
+      "exam_types_map": {
+        "单项选择题": true,
+        "填空题": true,
+        "计算题": true,
+        "证明题": true
+      },
+      "content_summary": "一次同余方程 ★★★★★\n\n> **最重要章节之一**，RSA 即基于此。\n\n### 核心概念\n\n| 概念 | 要点 |\n|------|------|\n| 一次同余方程 | $ax \\equiv b \\pmod{m}$，有解 $\\iff \\gcd(a,m) \\mid b$ |\n| 逆元 | $a^{-1} \\bmod m$ 存在 $\\iff \\gcd(a,m)=1$，用扩展辗转相除法求 |\n| 中国剩余定理 (CRT) | 模数两两互素的同余方程组有唯一解（模乘积意义下） |\n| RSA | 基于大整数分解困难性的公钥密码 |\n\n### 一次同余方程求解步骤\n\n$ax \\equiv b \\pmod{m}$，$d=\\gcd(a,m)$：\n\n1. 若 $d \\nmid b$，无解\n2. 若 $d \\mid b$，两边除以 $d$，化为 $a''x \\equiv b'' \\pmod{m'}$，其中 $\\g ... 54, 61, 70$\n- (D) $5, 12, 19, 26, 33, 40, 47, 54, 61, 79$\n\n**7.** 整数 $200$ 的标准分解式是？\n- (A) $4\\times 25\\times 2$\n- (B) $2\\times 50\\times 2$\n- (C) $100\\times 1\\times 2$\n- (D) $2^{3}\\times 5^{2}$\n\n**8.** CRT 可以对 RSA 算法的哪个过程进行加速？\n- (A) 加密过程\n- (B) 解密过程\n- (C) 密钥生成过程\n- (D) 以上都是\n\n**9.** Rabin 公钥密码系统的安全性基于什么困难问题？\n- (A) 大整数分解\n- (B) 模合数平方根问题\n- (C) 离散对数问题\n- (D) 椭圆曲线上的离散对数问题\n\n**10.** 设整数 $m=7$，则 $m$ ",
+      "source_materials": [],
+      "order_index": 14
+    },
+    {
+      "id": "一次同余方程组与解数",
+      "label": "一次同余方程组与解数",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "中国剩余定理-crt"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "单项选择题": true,
+        "填空题": true,
+        "计算题": true,
+        "证明题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 15
+    },
+    {
+      "id": "仿射密码算法",
+      "label": "仿射密码算法",
+      "parent": "基础概念",
+      "weight": "key_point",
+      "prerequisites": [
+        "一次同余方程组与解数"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "单项选择题": true,
+        "填空题": true,
+        "计算题": true,
+        "证明题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 16
+    },
+    {
+      "id": "rsa公钥密码算法加密解密密钥生成正确性证明",
+      "label": "RSA公钥密码算法（加密/解密/密钥生成/正确性证明）",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "完全剩余系",
+        "欧拉函数"
+      ],
+      "hooks": [
+        "acronym"
+      ],
+      "exam_types_map": {
+        "单项选择题": true,
+        "填空题": true,
+        "计算题": true,
+        "证明题": true
+      },
+      "content_summary": "M_i y_i \\pmod{M}$\n\n### RSA 核心公式\n\n- $n=pq$，$\\varphi(n)=(p-1)(q-1)$\n- 选 $e$ 使 $\\gcd(e,\\varphi(n))=1$\n- 求 $d \\equiv e^{-1} \\pmod{\\varphi(n)}$（扩展辗转相除法）\n- 公钥 $(n,e)$，私钥 $d$\n- 加密：$c \\equiv m^e \\pmod{n}$\n- 解密：$m \\equiv c^d \\pmod{n}$\n\n**老师强调的考点**：欧拉函数条件、求逆元、RSA 全套流程\n\n### 常考证明\n\n- **RSA 解密正确性**（**A卷证明**）：需证 $m^{ed}\\equiv m \\pmod{n}$，分 $\\gcd(m,n)=1$ 和 $\\gcd(m,n)\\neq 1$ 两种情况\n\n### 对应作业题\n\n- 解同余方程 $7x \\equiv 4 \\p ... $b=121$，是否存在整数 $s,t$ 使得 $sa+tb=\\gcd(a,b)$ 成立？\n- (A) 存在，$s=57,\\;t=-82$\n- (B) 存在，$s=59,\\;t=-80$\n- (C) 不存在\n- (D) 存在，$s=58,\\;t=-81$\n\n**3.** 密码系统的五元组 $\\langle P,C,K,E,D\\rangle$ 分别代表什么？\n- (A) 明文、密文、密钥、加密算法、解密算法\n- (B) 明文、密文、加密、解密、函数\n- (C) 输入、输出、密钥、加密、解密\n- (D) 明文、密文、密钥、函数、解密\n\n**4.** 设 $m=10$，$a=7$，$b=5$，则下列哪个选项可以构成形如 $a\\times k+b$ 的一个模 $10$ 的完全剩余系？\n- (A) $5, 12, 19, 26, 33, 40, 47, 54, 61, 68$\n- (B)",
+      "source_materials": [],
+      "order_index": 17
+    },
+    {
+      "id": "二次同余与二次剩余",
+      "label": "二次同余与二次剩余",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "rsa公钥密码算法加密解密密钥生成正确性证明"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "单项选择题": true,
+        "填空题": true,
+        "计算题": true,
+        "证明题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 18
+    },
+    {
+      "id": "勒让德符号",
+      "label": "勒让德符号",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "简化剩余系",
+        "欧拉函数"
+      ],
+      "hooks": [
+        "absurd"
+      ],
+      "exam_types_map": {
+        "单项选择题": true,
+        "填空题": true,
+        "计算题": true,
+        "证明题": true
+      },
+      "content_summary": "已知107为素数，判断x^2同余56（mod107）是否有解\n计算勒让德符号（151/373）\n判断方程11x^2同余-3（mod91）\n证明：设n>1是个正整数，a^n - 1 是素数，则a=2且n为素数\n\n设n是一个正合数，p是n的大于1的正因数，则p⩽n。（ ）\n\n若k是任一正整数，则(ak,bk)=(a,b)。\n\n设a、b是两个整数，其中b>0，则对任意的整数c，存在唯一的整数q、r，使得a=bq+r，c<r<b+c。\n\n 判断101是否为素数\n\n设a、b、c是整 ... rsa，欧拉函数条件原则，同余式方程组，二次同余，原根阶证明，原根阶，离散对数的联系，2的很多次方是星期几，孙子定理，求逆元，平方剩余跟勒让德符号，平时作业和课后作业，简化剩余系，费马小定理 ... 已知 $\\varphi(n)=120$，$e=17$：(1) 扩展辗转相除法求 $\\gcd(120,17)$ 及贝祖系数；(2) 求 RSA 私钥指数 $d$\n\n---\n\n## 第4章 二次同余 ★★★★☆\n\n### 核心概念\n\n| 概念 | 要点 |\n|------|------|\n| 二次剩余 | $x^2\\equiv a \\pmod{p}$ 有解时 $a$ 为模 $p$ 的二次剩余 |\n| 勒让德符号 | $\\left(\\frac{a}{p}\\right)$：有解为 $1$，无解为 $-1$，$p\\mid a$ 为 $0$ |\n| 欧拉判别法 | $\\left(\\frac{a}{p}\\right)\\equiv a^{\\frac{p-1}{2}} \\pmod{p}$ |\n| 二次互反律 | $\\left(\\frac{p}{q}\\right)\\left(\\frac{q}{p}\\right)=(-1",
+      "source_materials": [],
+      "order_index": 19
+    },
+    {
+      "id": "欧拉判别法",
+      "label": "欧拉判别法",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "勒让德符号"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "单项选择题": true,
+        "填空题": true,
+        "计算题": true,
+        "证明题": true
+      },
+      "content_summary": "钥指数 $d$\n\n---\n\n## 第4章 二次同余 ★★★★☆\n\n### 核心概念\n\n| 概念 | 要点 |\n|------|------|\n| 二次剩余 | $x^2\\equiv a \\pmod{p}$ 有解时 $a$ 为模 $p$ 的二次剩余 |\n| 勒让德符号 | $\\left(\\frac{a}{p}\\right)$：有解为 $1$，无解为 $-1$，$p\\mid a$ 为 $0$ |\n| 欧拉判别法 | $\\left(\\frac{a}{p}\\right)\\equiv a^{\\frac{p-1}{2}} \\pmod{p}$ |\n| 二次互反律 | $\\left(\\frac{p}{q}\\right)\\left(\\frac{q}{p}\\right)=(-1)^{\\frac{p-1}{2}\\cdot\\frac{q-1}{2}}$ |\n\n### 必会公式\n\n- $\\left(\\frac{-1}{p}\\",
+      "source_materials": [],
+      "order_index": 20
+    },
+    {
+      "id": "二次互反律",
+      "label": "二次互反律",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "勒让德符号",
+        "欧拉判别法"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "单项选择题": true,
+        "填空题": true,
+        "计算题": true,
+        "证明题": true
+      },
+      "content_summary": "二次剩余 | $x^2\\equiv a \\pmod{p}$ 有解时 $a$ 为模 $p$ 的二次剩余 |\n| 勒让德符号 | $\\left(\\frac{a}{p}\\right)$：有解为 $1$，无解为 $-1$，$p\\mid a$ 为 $0$ |\n| 欧拉判别法 | $\\left(\\frac{a}{p}\\right)\\equiv a^{\\frac{p-1}{2}} \\pmod{p}$ |\n| 二次互反律 | $\\left(\\frac{p}{q}\\right)\\left(\\frac{q}{p}\\right)=(-1)^{\\frac{p-1}{2}\\cdot\\frac{q-1}{2}}$ |\n\n### 必会公式\n\n- $\\left(\\frac{-1}{p}\\right)=(-1)^{\\frac{p-1}{2}}$：$p\\equiv 1\\pmod{4}$ 时 $-1$ 是二次剩余\n- $\\left(\\",
+      "source_materials": [],
+      "order_index": 21
+    },
+    {
+      "id": "原根与阶的定义及性质",
+      "label": "原根与阶的定义及性质",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "二次互反律"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "单项选择题": true,
+        "填空题": true,
+        "计算题": true,
+        "证明题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 22
+    },
+    {
+      "id": "原根阶的证明",
+      "label": "原根阶的证明",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "原根与阶的定义及性质"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "单项选择题": true,
+        "填空题": true,
+        "计算题": true,
+        "证明题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 23
+    },
+    {
+      "id": "素数的原根求解",
+      "label": "素数的原根求解",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "原根阶的证明"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "单项选择题": true,
+        "填空题": true,
+        "计算题": true,
+        "证明题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 24
+    },
+    {
+      "id": "离散对数",
+      "label": "离散对数",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "完全剩余系",
+        "简化剩余系"
+      ],
+      "hooks": [
+        "absurd"
+      ],
+      "exam_types_map": {
+        "单项选择题": true,
+        "填空题": true,
+        "计算题": true,
+        "证明题": true
+      },
+      "content_summary": "rsa，欧拉函数条件原则，同余式方程组，二次同余，原根阶证明，原根阶，离散对数的联系，2的很多次方是星期几，孙子定理，求逆元，平方剩余跟勒让德符号，平时作业和课后作业，简化剩余系，费马小定理 ... （A卷选择6、B卷选择4）\n- **勒让德符号** 计算（B卷填空3、作业题）\n- **求解二次同余式**（B卷计算2）\n\n### 对应作业题\n\n- 判断 $x^2\\equiv 56 \\pmod{107}$ 是否有解\n- 计算勒让德符号 $\\left(\\frac{151}{373}\\right)$\n- 判断方程 $11x^2\\equiv -3 \\pmod{91}$\n\n---\n\n## 第5章 原根和离散对数 ★★★★☆\n\n### 核心概念\n\n| 概念 | 要点 |\n|------|------|\n| 阶 | 使 $a^k\\equiv 1\\pmod{m}$ 的最小正整数 $k$，记作 $\\operatorname{ord}_m(a)$ |\n| 原根 | $\\operatorname{ord}_m(g)=\\varphi(m)$ 时 $g$ 为模 $m$ 的原根 |\n| 离散对数 | $\\operator ... - (C) $100\\times 1\\times 2$\n- (D) $2^{3}\\times 5^{2}$\n\n**8.** CRT 可以对 RSA 算法的哪个过程进行加速？\n- (A) 加密过程\n- (B) 解密过程\n- (C) 密钥生成过程\n- (D) 以上都是\n\n**9.** Rabin 公钥密码系统的安全性基于什么困难问题？\n- (A) 大整数分解\n- (B) 模合数平方根问题\n- (C) 离散对数问题\n- (D) 椭圆曲线上的离散对数问题\n\n**10.** 设整数 $m=7$，则 $m$ 的原根是？\n- (A) 3\n- (B) 4\n- (C) 5\n- (D) 6\n\n-",
+      "source_materials": [],
+      "order_index": 25
+    },
+    {
+      "id": "elgamal密码算法",
+      "label": "ElGamal密码算法",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "离散对数"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "单项选择题": true,
+        "填空题": true,
+        "计算题": true,
+        "证明题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 26
+    },
+    {
+      "id": "群的基本概念",
+      "label": "群的基本概念",
+      "parent": "基础概念",
+      "weight": "key_point",
+      "prerequisites": [
+        "elgamal密码算法"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "单项选择题": true,
+        "填空题": true,
+        "计算题": true,
+        "证明题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 27
+    },
+    {
+      "id": "环与域基础",
+      "label": "环与域基础",
+      "parent": "基础概念",
+      "weight": "key_point",
+      "prerequisites": [
+        "elgamal密码算法"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "单项选择题": true,
+        "填空题": true,
+        "计算题": true,
+        "证明题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 28
+    },
+    {
+      "id": "有限域基本概念",
+      "label": "有限域基本概念",
+      "parent": "基础概念",
+      "weight": "key_point",
+      "prerequisites": [
+        "elgamal密码算法"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "单项选择题": true,
+        "填空题": true,
+        "计算题": true,
+        "证明题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 29
+    },
+    {
+      "id": "椭圆曲线基本概念与weierstrass方程",
+      "label": "椭圆曲线基本概念与Weierstrass方程",
+      "parent": "基础概念",
+      "weight": "key_point",
+      "prerequisites": [
+        "elgamal密码算法"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "单项选择题": true,
+        "填空题": true,
+        "计算题": true,
+        "证明题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 30
+    },
+    {
+      "id": "椭圆曲线在密码学中的应用",
+      "label": "椭圆曲线在密码学中的应用",
+      "parent": "基础概念",
+      "weight": "key_point",
+      "prerequisites": [
+        "elgamal密码算法"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "单项选择题": true,
+        "填空题": true,
+        "计算题": true,
+        "证明题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 31
+    }
+  ],
+  "topo_order": [
+    "整除与带余除法",
+    "最大公因数与辗转相除法",
+    "扩展辗转相除法与贝祖等式",
+    "最小公倍数",
+    "算术基本定理与标准分解式",
+    "完全剩余系",
+    "简化剩余系",
+    "欧拉函数",
+    "欧拉定理",
+    "离散对数",
+    "rsa公钥密码算法加密解密密钥生成正确性证明",
+    "勒让德符号",
+    "费马小定理及应用",
+    "elgamal密码算法",
+    "二次同余与二次剩余",
+    "欧拉判别法",
+    "模幂运算与平方-乘算法",
+    "二次互反律",
+    "一次同余方程求解",
+    "原根与阶的定义及性质",
+    "逆元求解扩展辗转相除法",
+    "中国剩余定理-crt",
+    "原根阶的证明",
+    "一次同余方程组与解数",
+    "素数的原根求解",
+    "同余的基本性质",
+    "群的基本概念",
+    "环与域基础",
+    "有限域基本概念",
+    "椭圆曲线基本概念与weierstrass方程",
+    "椭圆曲线在密码学中的应用",
+    "仿射密码算法"
+  ]
+}
