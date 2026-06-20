@@ -1,0 +1,201 @@
+{
+  "course": "计算机网络",
+  "version": 2,
+  "nodes": [
+    {
+      "id": "计算机网络概述三网融合互联网特点交换技术性能指标",
+      "label": "计算机网络概述（三网融合、互联网特点、交换技术、性能指标）",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "填空题": true,
+        "选择题": true,
+        "简答题": true,
+        "名词解释": true,
+        "综合题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 0
+    },
+    {
+      "id": "网络体系结构五层协议协议三要素协议与服务ositcpip对比",
+      "label": "网络体系结构（五层协议、协议三要素、协议与服务、OSI/TCP/IP对比）",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "计算机网络概述三网融合互联网特点交换技术性能指标"
+      ],
+      "hooks": [
+        "contrast",
+        "absurd",
+        "acronym"
+      ],
+      "exam_types_map": {
+        "填空题": true,
+        "选择题": true,
+        "简答题": true,
+        "名词解释": true,
+        "综合题": true
+      },
+      "content_summary": "### 一、单项选择题（选择正确答案的字母填入括号，每小题 1 分，共 10 分）\n\n1. 码分复用技术要求不同网卡的码片必须满足哪种关系 ( ) A、相同 B、反码 C、补码 D、正交\n2. IGMP 协议的功能是 ( ) A、多播成员发现 B、多播路由发现 C、洪泛法多播路由 D、核心树法多播\n3. TCP 使用的流量控制协议是 ( ) A、固定大小的滑动窗口协议 B、可变大小的滑动窗口协议 C、后退 N 帧 ARQ 协议 D、选择重发 ARQ 协议\n4. 在给主机设置 IP 地址时，下面哪一个能使用 ( ) A、29.9.255.15 B、127.21.19.109 C、192.5.91.255 D、220.103.25... *(注：D选项边缘显示不全)*\n5. RIP 协议的“距离”以 ( ) ... 络的定义\n - 1.5.2 几种不同类别的计算机网络\n- **1.6 计算机网络的性能**\n - 1.6.1 计算机网络的性能指标\n - 1.6.2 计算机网络的非性能特征\n- **1.7 计算机网络体系结构**\n - 1.7.1 计算机网络体系结构的形成\n - 1.7.2 协议与划分层次\n - 1.7.3 具有五层协议的体系结构\n - 1.7.4 实体、协议、服务和服务访问点\n - 1.7.5 TCP/IP 的体系结构\n\n### 第2章 物理层\n\n- **2.1 物理层的基本概念**\n- **2.2 数据通信的基础知识**\n - 2.2.1 数据通信系统的模型\n - 2.2.2 有关信道的几个基本概念\n - 2.2.3 信道的极限容量\n- **2.3 物理层下面的传输媒体**\n - 2.3.1 导引型传输媒体\n - 2.3.2 非导引型传输媒体\n- **2.4 信道复用技术**\n - 2.4. ... C、ETHERNET D、NOVELL A、10.110.12",
+      "source_materials": [],
+      "order_index": 1
+    },
+    {
+      "id": "物理层接口特性通信方式编码方式香农公式复用技术",
+      "label": "物理层（接口特性、通信方式、编码方式、香农公式、复用技术）",
+      "parent": "基础概念",
+      "weight": "key_point",
+      "prerequisites": [
+        "网络体系结构五层协议协议三要素协议与服务ositcpip对比"
+      ],
+      "hooks": [
+        "acronym"
+      ],
+      "exam_types_map": {
+        "填空题": true,
+        "选择题": true,
+        "简答题": true,
+        "名词解释": true,
+        "综合题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 2
+    },
+    {
+      "id": "数据链路层三个基本问题crcpppcsmacdmac地址vlan",
+      "label": "数据链路层（三个基本问题、CRC、PPP、CSMA/CD、MAC地址、VLAN）",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "网络体系结构五层协议协议三要素协议与服务ositcpip对比",
+        "物理层接口特性通信方式编码方式香农公式复用技术"
+      ],
+      "hooks": [
+        "acronym"
+      ],
+      "exam_types_map": {
+        "填空题": true,
+        "选择题": true,
+        "简答题": true,
+        "名词解释": true,
+        "综合题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 3
+    },
+    {
+      "id": "网络层ip地址分类cidrarpicmpipv6ripospfbgpnatvpn",
+      "label": "网络层（IP地址分类、CIDR、ARP、ICMP、IPv6、RIP/OSPF/BGP、NAT、VPN）",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "数据链路层三个基本问题crcpppcsmacdmac地址vlan",
+        "物理层接口特性通信方式编码方式香农公式复用技术"
+      ],
+      "hooks": [
+        "absurd",
+        "acronym"
+      ],
+      "exam_types_map": {
+        "填空题": true,
+        "选择题": true,
+        "简答题": true,
+        "名词解释": true,
+        "综合题": true
+      },
+      "content_summary": "种类\n - 4.4.2 ICMP 的应用举例\n- **4.5 IPv6**\n - 4.5.1 IPv6 的基本首部\n - 4.5.2 IPv6 的地址\n - 4.5.3 从 IPv4 向 IPv6 过渡\n - 4.5.4 ICMPv6\n- **4.6 互联网的路由选择协议**\n - 4.6.1 有关路由选择协议的几个基本概念\n - 4.6.2 内部网关协议 RIP\n - 4.6.3 内部网关协议 OSPF\n - 4.6.4 外部网关协议 BGP\n - 4.6.5 路由器构成\n- **4.7 IP 多播**\n - 4.7.1 IP 多播的基本概念\n - 4.7.2 在局域网长进行硬件多播\n - 4.7.3 网际组管理协议 IGMP 和多播路由选择协议\n- **4.8 虚拟专用网 VPN 和网络地址转换 NAT**\n - 4.8.1 虚拟专用网 VPN\n - 4.8.2 网络地址转换\n- **4.9 ... 5\n1.131 TCP/IP 协议簇包含一个提供对电子邮件邮箱 C 类地址： 192.168.0.0～192.168.255.255\n进行远程获取的协议，称为 ___A___ 。 1.143 设有 2 条路由 21.1.193.0/24 和 21.1.194.0/24 ，\nA：POP B：SMTP C：FTP D：TELNET 如果进行路由汇聚，覆盖这 2 条路由的地址是 _C_ 。\n1.132 OSPF 协议是 A 。 A．21.1.200.0/22 B．21.1.192.0/23\nA．域内路由协议 B．域间路由协议 C．21.1.192.0/21 D．21.1.224.0/20\nC．无域路由协议 D．应用层协议 1.144 下面关于 IPv6 协议优点的描述中， 准确的是 B\n1.133 在虚电路服务中分组的顺序 A 。 A．IPv6 协议允许全局 IP 地址出现重复\n",
+      "source_materials": [],
+      "order_index": 4
+    },
+    {
+      "id": "运输层tcpudp对比端口号停止等待协议流量控制拥塞控制三次握手四次挥手",
+      "label": "运输层（TCP/UDP对比、端口号、停止等待协议、流量控制、拥塞控制、三次握手/四次挥手）",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "网络层ip地址分类cidrarpicmpipv6ripospfbgpnatvpn",
+        "物理层接口特性通信方式编码方式香农公式复用技术"
+      ],
+      "hooks": [
+        "contrast",
+        "absurd",
+        "acronym"
+      ],
+      "exam_types_map": {
+        "填空题": true,
+        "选择题": true,
+        "简答题": true,
+        "名词解释": true,
+        "综合题": true
+      },
+      "content_summary": "60. TCP 61. 客户-服务器(C/S)、对等(P2P) 62. 连通性、共享性\n63. 域名系统 64. 语法、语义 65. 灵活、可靠\n66. 半双工、全双工 67. 转发器（中继器）、路由器 68. 差错报告报文\n69. NCP（网络控制协议） 70. 路由选择 71. 21、20\n72. 字节填充、零比特填充 73. 差错检测 74. 香农\n75. 同步（时钟） 76. 连接释放（四次挥手） 77. 前24位是网络前缀\n78. Dijkstra（最短路径） 79. 192.168.0.0~192.168.255.255 80. 超时\n\n---\n\n## 四、判断题\n\n1. RIP（Routing Information Protocol）是一种路由协议。（ ）\n\n2. 传输控制协议（TCP）属于传输层协议，而用户数据报协议（UDP）属于网络层协议。（ ）\n\n3. ISO划分网络层次的基",
+      "source_materials": [],
+      "order_index": 5
+    },
+    {
+      "id": "应用层dnshttpftp电子邮件协议dhcp",
+      "label": "应用层（DNS、HTTP、FTP、电子邮件协议、DHCP）",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "运输层tcpudp对比端口号停止等待协议流量控制拥塞控制三次握手四次挥手",
+        "物理层接口特性通信方式编码方式香农公式复用技术"
+      ],
+      "hooks": [
+        "absurd",
+        "acronym"
+      ],
+      "exam_types_map": {
+        "填空题": true,
+        "选择题": true,
+        "简答题": true,
+        "名词解释": true,
+        "综合题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 6
+    },
+    {
+      "id": "计算题时延计算crc子网划分cidr最长前缀匹配拥塞窗口变化",
+      "label": "计算题（时延计算、CRC、子网划分、CIDR最长前缀匹配、拥塞窗口变化）",
+      "parent": "基础概念",
+      "weight": "key_point",
+      "prerequisites": [
+        "应用层dnshttpftp电子邮件协议dhcp",
+        "物理层接口特性通信方式编码方式香农公式复用技术"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "填空题": true,
+        "选择题": true,
+        "简答题": true,
+        "名词解释": true,
+        "综合题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 7
+    }
+  ],
+  "topo_order": [
+    "计算机网络概述三网融合互联网特点交换技术性能指标",
+    "网络体系结构五层协议协议三要素协议与服务ositcpip对比",
+    "物理层接口特性通信方式编码方式香农公式复用技术",
+    "数据链路层三个基本问题crcpppcsmacdmac地址vlan",
+    "网络层ip地址分类cidrarpicmpipv6ripospfbgpnatvpn",
+    "运输层tcpudp对比端口号停止等待协议流量控制拥塞控制三次握手四次挥手",
+    "应用层dnshttpftp电子邮件协议dhcp",
+    "计算题时延计算crc子网划分cidr最长前缀匹配拥塞窗口变化"
+  ]
+}

@@ -1,0 +1,175 @@
+{
+    "course":  "计算机网络",
+    "current_stage":  3,
+    "current_node_id":  null,
+    "stage2_pace":  "normal",
+    "stage2_position":  0,
+    "stage3_position":  0,
+    "stage3_current_submode":  null,
+    "nodes":  {
+                  "计算机网络概述三网融合互联网特点交换技术性能指标":  {
+                                                   "stage1_done":  true,
+                                                   "stage2_done":  true,
+                                                   "stage3_passed":  true,
+                                                   "stage3_wrong_answers":  [
+
+                                                                            ],
+                                                   "stage4_done":  true,
+                                                   "stage4_retry_count":  0,
+                                                   "stubborn":  false,
+                                                   "mastery":  "mastered",
+                                                   "sm2":  {
+                                                               "interval":  0,
+                                                               "ease":  2.5,
+                                                               "repetitions":  0,
+                                                               "next_review":  null
+                                                           },
+                                                   "last_updated":  "2026-06-17T11:56:38Z"
+                                               },
+                  "网络体系结构五层协议协议三要素协议与服务ositcpip对比":  {
+                                                         "stage1_done":  true,
+                                                         "stage2_done":  true,
+                                                         "stage3_passed":  true,
+                                                         "stage3_wrong_answers":  [
+
+                                                                                  ],
+                                                         "stage4_done":  true,
+                                                         "stage4_retry_count":  0,
+                                                         "stubborn":  false,
+                                                         "mastery":  "mastered",
+                                                         "sm2":  {
+                                                                     "interval":  0,
+                                                                     "ease":  2.5,
+                                                                     "repetitions":  0,
+                                                                     "next_review":  null
+                                                                 },
+                                                         "last_updated":  "2026-06-17T11:56:38Z"
+                                                     },
+                  "物理层接口特性通信方式编码方式香农公式复用技术":  {
+                                                  "stage1_done":  true,
+                                                  "stage2_done":  true,
+                                                  "stage3_passed":  null,
+                                                  "stage3_wrong_answers":  [
+
+                                                                           ],
+                                                  "stage4_done":  false,
+                                                  "stage4_retry_count":  0,
+                                                  "stubborn":  false,
+                                                  "mastery":  "learning",
+                                                  "sm2":  {
+                                                              "interval":  0,
+                                                              "ease":  2.5,
+                                                              "repetitions":  0,
+                                                              "next_review":  null
+                                                          },
+                                                  "last_updated":  "2026-06-17T11:56:38Z"
+                                              },
+                  "数据链路层三个基本问题crcpppcsmacdmac地址vlan":  {
+                                                           "stage1_done":  true,
+                                                           "stage2_done":  true,
+                                                           "stage3_passed":  true,
+                                                           "stage3_wrong_answers":  [
+
+                                                                                    ],
+                                                           "stage4_done":  true,
+                                                           "stage4_retry_count":  0,
+                                                           "stubborn":  false,
+                                                           "mastery":  "mastered",
+                                                           "sm2":  {
+                                                                       "interval":  0,
+                                                                       "ease":  2.5,
+                                                                       "repetitions":  0,
+                                                                       "next_review":  null
+                                                                   },
+                                                           "last_updated":  "2026-06-17T11:56:38Z"
+                                                       },
+                  "网络层ip地址分类cidrarpicmpipv6ripospfbgpnatvpn":  {
+                                                                   "stage1_done":  true,
+                                                                   "stage2_done":  true,
+                                                                   "stage3_passed":  null,
+                                                                   "stage3_wrong_answers":  [
+
+                                                                                            ],
+                                                                   "stage4_done":  false,
+                                                                   "stage4_retry_count":  0,
+                                                                   "stubborn":  false,
+                                                                   "mastery":  "learning",
+                                                                   "sm2":  {
+                                                                               "interval":  0,
+                                                                               "ease":  2.5,
+                                                                               "repetitions":  0,
+                                                                               "next_review":  null
+                                                                           },
+                                                                   "last_updated":  "2026-06-17T11:56:38Z"
+                                                               },
+                  "运输层tcpudp对比端口号停止等待协议流量控制拥塞控制三次握手四次挥手":  {
+                                                               "stage1_done":  true,
+                                                               "stage2_done":  true,
+                                                               "stage3_passed":  true,
+                                                               "stage3_wrong_answers":  [
+
+                                                                                        ],
+                                                               "stage4_done":  true,
+                                                               "stage4_retry_count":  0,
+                                                               "stubborn":  false,
+                                                               "mastery":  "mastered",
+                                                               "sm2":  {
+                                                                           "interval":  0,
+                                                                           "ease":  2.5,
+                                                                           "repetitions":  0,
+                                                                           "next_review":  null
+                                                                       },
+                                                               "last_updated":  "2026-06-17T11:56:38Z"
+                                                           },
+                  "应用层dnshttpftp电子邮件协议dhcp":  {
+                                                  "stage1_done":  true,
+                                                  "stage2_done":  true,
+                                                  "stage3_passed":  true,
+                                                  "stage3_wrong_answers":  [
+
+                                                                           ],
+                                                  "stage4_done":  true,
+                                                  "stage4_retry_count":  0,
+                                                  "stubborn":  false,
+                                                  "mastery":  "mastered",
+                                                  "sm2":  {
+                                                              "interval":  0,
+                                                              "ease":  2.5,
+                                                              "repetitions":  0,
+                                                              "next_review":  null
+                                                          },
+                                                  "last_updated":  "2026-06-17T11:56:38Z"
+                                              },
+                  "计算题时延计算crc子网划分cidr最长前缀匹配拥塞窗口变化":  {
+                                                         "stage1_done":  true,
+                                                         "stage2_done":  true,
+                                                         "stage3_passed":  null,
+                                                         "stage3_wrong_answers":  [
+
+                                                                                  ],
+                                                         "stage4_done":  false,
+                                                         "stage4_retry_count":  0,
+                                                         "stubborn":  false,
+                                                         "mastery":  "learning",
+                                                         "sm2":  {
+                                                                     "interval":  0,
+                                                                     "ease":  2.5,
+                                                                     "repetitions":  0,
+                                                                     "next_review":  null
+                                                                 },
+                                                         "last_updated":  "2026-06-17T11:56:38Z"
+                                                     }
+              },
+    "completed_nodes":  [
+
+                        ],
+    "error_nodes":  [
+
+                    ],
+    "stubborn_nodes":  [
+
+                       ],
+    "session_history":  [
+
+                        ]
+}

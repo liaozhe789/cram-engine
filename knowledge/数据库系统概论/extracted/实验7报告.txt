@@ -1,0 +1,415 @@
+计算机科学技术学院实验报告
+注：项目性质为 演示型、验证型、设计型、综合型和创新型。
+课程名称 | 数据库原理与应用 | 数据库原理与应用 | 数据库原理与应用 | 学   号 | 42
+实验项目 | 存储过程 | 存储过程 | 存储过程 | 姓   名 | 祁勇
+学    时 | 2 | 项目性质 | 设计型 | 班   级 | 2405311
+指导教师 | 颜雁 | 实验地点 | 实训楼304 | 日   期 | 2026年5月30日
+实验目的和要求
+熟悉存储过程的定义和使用，熟练运用 select  ,update ,insert ,delete 命令完成对学生信息数据库的查询、更新、添加、删除操作。 | 实验目的和要求
+熟悉存储过程的定义和使用，熟练运用 select  ,update ,insert ,delete 命令完成对学生信息数据库的查询、更新、添加、删除操作。 | 实验目的和要求
+熟悉存储过程的定义和使用，熟练运用 select  ,update ,insert ,delete 命令完成对学生信息数据库的查询、更新、添加、删除操作。 | 实验目的和要求
+熟悉存储过程的定义和使用，熟练运用 select  ,update ,insert ,delete 命令完成对学生信息数据库的查询、更新、添加、删除操作。 | 实验目的和要求
+熟悉存储过程的定义和使用，熟练运用 select  ,update ,insert ,delete 命令完成对学生信息数据库的查询、更新、添加、删除操作。 | 实验目的和要求
+熟悉存储过程的定义和使用，熟练运用 select  ,update ,insert ,delete 命令完成对学生信息数据库的查询、更新、添加、删除操作。
+实验环境
+操作系统： Windows 10/11
+数据库管理系统： SQL Server 2025 
+管理工具： SQL Server Management Studio (SSMS) | 实验环境
+操作系统： Windows 10/11
+数据库管理系统： SQL Server 2025 
+管理工具： SQL Server Management Studio (SSMS) | 实验环境
+操作系统： Windows 10/11
+数据库管理系统： SQL Server 2025 
+管理工具： SQL Server Management Studio (SSMS) | 实验环境
+操作系统： Windows 10/11
+数据库管理系统： SQL Server 2025 
+管理工具： SQL Server Management Studio (SSMS) | 实验环境
+操作系统： Windows 10/11
+数据库管理系统： SQL Server 2025 
+管理工具： SQL Server Management Studio (SSMS) | 实验环境
+操作系统： Windows 10/11
+数据库管理系统： SQL Server 2025 
+管理工具： SQL Server Management Studio (SSMS)
+实验内容与过程
+学生（学号，年龄，性别，系名） 
+课程（课号，课名，学分，学时）
+选课（学号，课号，成绩）
+根据上面基本表的信息定义一个存储过程，完成下面功能：
+入口参数：学号
+1 显示学生的选课信息
+2 如果学生没选课，让他选1号课，插入一条选课记录，成绩为0
+3 如果学生所有课都不及格，删掉该学生记录
+
+代码：
+CREATE PROCEDURE usp_ProcessStudent
+    @sid char(10)
+AS
+BEGIN
+    DECLARE @total_courses int;
+    DECLARE @passed_courses int;
+
+    SELECT Student.学号, Student.姓名, Course.课名, SC.成绩
+    FROM Student
+    JOIN SC ON Student.学号 = SC.学号
+    JOIN Course ON SC.课号 = Course.课号
+    WHERE Student.学号 = @sid;
+
+    SELECT @total_courses = COUNT(*) FROM SC WHERE 学号 = @sid;
+
+    IF @total_courses = 0
+    BEGIN
+        INSERT INTO SC (学号, 课号, 成绩) 
+        VALUES (@sid, 'C01', 0);
+    END
+    ELSE
+    BEGIN
+        SELECT @passed_courses = COUNT(*) FROM SC WHERE 学号 = @sid AND 成绩 >= 60;
+
+        IF @passed_courses = 0
+        BEGIN
+            DELETE FROM SC WHERE 学号 = @sid;
+            DELETE FROM Student WHERE 学号 = @sid;
+        END
+    END
+END;
+测试数据准备
+为了完整验证存储过程内部的三个独立逻辑分支，需要准备以下三组具有代表性的测试学生数据：
+Course（课程表）包含课号 C01 (数据库原理)。
+Student（学生表）初始包含学号 2026001 (张力，有多门及格和优秀成绩)，用于测试常规查询分支。同时包含学号 2026002 (李四，仅选了一门 C01 且分数为 55 分)，用于测试全挂科清退分支。
+使用以下代码动态插入无选课学生测试君，用于测试自动选课分支： INSERT INTO Student (学号, 年龄, 性别, 系号, 姓名) VALUES ('2026009', 20, N'男', 'CS', N'测试君'); | 实验内容与过程
+学生（学号，年龄，性别，系名） 
+课程（课号，课名，学分，学时）
+选课（学号，课号，成绩）
+根据上面基本表的信息定义一个存储过程，完成下面功能：
+入口参数：学号
+1 显示学生的选课信息
+2 如果学生没选课，让他选1号课，插入一条选课记录，成绩为0
+3 如果学生所有课都不及格，删掉该学生记录
+
+代码：
+CREATE PROCEDURE usp_ProcessStudent
+    @sid char(10)
+AS
+BEGIN
+    DECLARE @total_courses int;
+    DECLARE @passed_courses int;
+
+    SELECT Student.学号, Student.姓名, Course.课名, SC.成绩
+    FROM Student
+    JOIN SC ON Student.学号 = SC.学号
+    JOIN Course ON SC.课号 = Course.课号
+    WHERE Student.学号 = @sid;
+
+    SELECT @total_courses = COUNT(*) FROM SC WHERE 学号 = @sid;
+
+    IF @total_courses = 0
+    BEGIN
+        INSERT INTO SC (学号, 课号, 成绩) 
+        VALUES (@sid, 'C01', 0);
+    END
+    ELSE
+    BEGIN
+        SELECT @passed_courses = COUNT(*) FROM SC WHERE 学号 = @sid AND 成绩 >= 60;
+
+        IF @passed_courses = 0
+        BEGIN
+            DELETE FROM SC WHERE 学号 = @sid;
+            DELETE FROM Student WHERE 学号 = @sid;
+        END
+    END
+END;
+测试数据准备
+为了完整验证存储过程内部的三个独立逻辑分支，需要准备以下三组具有代表性的测试学生数据：
+Course（课程表）包含课号 C01 (数据库原理)。
+Student（学生表）初始包含学号 2026001 (张力，有多门及格和优秀成绩)，用于测试常规查询分支。同时包含学号 2026002 (李四，仅选了一门 C01 且分数为 55 分)，用于测试全挂科清退分支。
+使用以下代码动态插入无选课学生测试君，用于测试自动选课分支： INSERT INTO Student (学号, 年龄, 性别, 系号, 姓名) VALUES ('2026009', 20, N'男', 'CS', N'测试君'); | 实验内容与过程
+学生（学号，年龄，性别，系名） 
+课程（课号，课名，学分，学时）
+选课（学号，课号，成绩）
+根据上面基本表的信息定义一个存储过程，完成下面功能：
+入口参数：学号
+1 显示学生的选课信息
+2 如果学生没选课，让他选1号课，插入一条选课记录，成绩为0
+3 如果学生所有课都不及格，删掉该学生记录
+
+代码：
+CREATE PROCEDURE usp_ProcessStudent
+    @sid char(10)
+AS
+BEGIN
+    DECLARE @total_courses int;
+    DECLARE @passed_courses int;
+
+    SELECT Student.学号, Student.姓名, Course.课名, SC.成绩
+    FROM Student
+    JOIN SC ON Student.学号 = SC.学号
+    JOIN Course ON SC.课号 = Course.课号
+    WHERE Student.学号 = @sid;
+
+    SELECT @total_courses = COUNT(*) FROM SC WHERE 学号 = @sid;
+
+    IF @total_courses = 0
+    BEGIN
+        INSERT INTO SC (学号, 课号, 成绩) 
+        VALUES (@sid, 'C01', 0);
+    END
+    ELSE
+    BEGIN
+        SELECT @passed_courses = COUNT(*) FROM SC WHERE 学号 = @sid AND 成绩 >= 60;
+
+        IF @passed_courses = 0
+        BEGIN
+            DELETE FROM SC WHERE 学号 = @sid;
+            DELETE FROM Student WHERE 学号 = @sid;
+        END
+    END
+END;
+测试数据准备
+为了完整验证存储过程内部的三个独立逻辑分支，需要准备以下三组具有代表性的测试学生数据：
+Course（课程表）包含课号 C01 (数据库原理)。
+Student（学生表）初始包含学号 2026001 (张力，有多门及格和优秀成绩)，用于测试常规查询分支。同时包含学号 2026002 (李四，仅选了一门 C01 且分数为 55 分)，用于测试全挂科清退分支。
+使用以下代码动态插入无选课学生测试君，用于测试自动选课分支： INSERT INTO Student (学号, 年龄, 性别, 系号, 姓名) VALUES ('2026009', 20, N'男', 'CS', N'测试君'); | 实验内容与过程
+学生（学号，年龄，性别，系名） 
+课程（课号，课名，学分，学时）
+选课（学号，课号，成绩）
+根据上面基本表的信息定义一个存储过程，完成下面功能：
+入口参数：学号
+1 显示学生的选课信息
+2 如果学生没选课，让他选1号课，插入一条选课记录，成绩为0
+3 如果学生所有课都不及格，删掉该学生记录
+
+代码：
+CREATE PROCEDURE usp_ProcessStudent
+    @sid char(10)
+AS
+BEGIN
+    DECLARE @total_courses int;
+    DECLARE @passed_courses int;
+
+    SELECT Student.学号, Student.姓名, Course.课名, SC.成绩
+    FROM Student
+    JOIN SC ON Student.学号 = SC.学号
+    JOIN Course ON SC.课号 = Course.课号
+    WHERE Student.学号 = @sid;
+
+    SELECT @total_courses = COUNT(*) FROM SC WHERE 学号 = @sid;
+
+    IF @total_courses = 0
+    BEGIN
+        INSERT INTO SC (学号, 课号, 成绩) 
+        VALUES (@sid, 'C01', 0);
+    END
+    ELSE
+    BEGIN
+        SELECT @passed_courses = COUNT(*) FROM SC WHERE 学号 = @sid AND 成绩 >= 60;
+
+        IF @passed_courses = 0
+        BEGIN
+            DELETE FROM SC WHERE 学号 = @sid;
+            DELETE FROM Student WHERE 学号 = @sid;
+        END
+    END
+END;
+测试数据准备
+为了完整验证存储过程内部的三个独立逻辑分支，需要准备以下三组具有代表性的测试学生数据：
+Course（课程表）包含课号 C01 (数据库原理)。
+Student（学生表）初始包含学号 2026001 (张力，有多门及格和优秀成绩)，用于测试常规查询分支。同时包含学号 2026002 (李四，仅选了一门 C01 且分数为 55 分)，用于测试全挂科清退分支。
+使用以下代码动态插入无选课学生测试君，用于测试自动选课分支： INSERT INTO Student (学号, 年龄, 性别, 系号, 姓名) VALUES ('2026009', 20, N'男', 'CS', N'测试君'); | 实验内容与过程
+学生（学号，年龄，性别，系名） 
+课程（课号，课名，学分，学时）
+选课（学号，课号，成绩）
+根据上面基本表的信息定义一个存储过程，完成下面功能：
+入口参数：学号
+1 显示学生的选课信息
+2 如果学生没选课，让他选1号课，插入一条选课记录，成绩为0
+3 如果学生所有课都不及格，删掉该学生记录
+
+代码：
+CREATE PROCEDURE usp_ProcessStudent
+    @sid char(10)
+AS
+BEGIN
+    DECLARE @total_courses int;
+    DECLARE @passed_courses int;
+
+    SELECT Student.学号, Student.姓名, Course.课名, SC.成绩
+    FROM Student
+    JOIN SC ON Student.学号 = SC.学号
+    JOIN Course ON SC.课号 = Course.课号
+    WHERE Student.学号 = @sid;
+
+    SELECT @total_courses = COUNT(*) FROM SC WHERE 学号 = @sid;
+
+    IF @total_courses = 0
+    BEGIN
+        INSERT INTO SC (学号, 课号, 成绩) 
+        VALUES (@sid, 'C01', 0);
+    END
+    ELSE
+    BEGIN
+        SELECT @passed_courses = COUNT(*) FROM SC WHERE 学号 = @sid AND 成绩 >= 60;
+
+        IF @passed_courses = 0
+        BEGIN
+            DELETE FROM SC WHERE 学号 = @sid;
+            DELETE FROM Student WHERE 学号 = @sid;
+        END
+    END
+END;
+测试数据准备
+为了完整验证存储过程内部的三个独立逻辑分支，需要准备以下三组具有代表性的测试学生数据：
+Course（课程表）包含课号 C01 (数据库原理)。
+Student（学生表）初始包含学号 2026001 (张力，有多门及格和优秀成绩)，用于测试常规查询分支。同时包含学号 2026002 (李四，仅选了一门 C01 且分数为 55 分)，用于测试全挂科清退分支。
+使用以下代码动态插入无选课学生测试君，用于测试自动选课分支： INSERT INTO Student (学号, 年龄, 性别, 系号, 姓名) VALUES ('2026009', 20, N'男', 'CS', N'测试君'); | 实验内容与过程
+学生（学号，年龄，性别，系名） 
+课程（课号，课名，学分，学时）
+选课（学号，课号，成绩）
+根据上面基本表的信息定义一个存储过程，完成下面功能：
+入口参数：学号
+1 显示学生的选课信息
+2 如果学生没选课，让他选1号课，插入一条选课记录，成绩为0
+3 如果学生所有课都不及格，删掉该学生记录
+
+代码：
+CREATE PROCEDURE usp_ProcessStudent
+    @sid char(10)
+AS
+BEGIN
+    DECLARE @total_courses int;
+    DECLARE @passed_courses int;
+
+    SELECT Student.学号, Student.姓名, Course.课名, SC.成绩
+    FROM Student
+    JOIN SC ON Student.学号 = SC.学号
+    JOIN Course ON SC.课号 = Course.课号
+    WHERE Student.学号 = @sid;
+
+    SELECT @total_courses = COUNT(*) FROM SC WHERE 学号 = @sid;
+
+    IF @total_courses = 0
+    BEGIN
+        INSERT INTO SC (学号, 课号, 成绩) 
+        VALUES (@sid, 'C01', 0);
+    END
+    ELSE
+    BEGIN
+        SELECT @passed_courses = COUNT(*) FROM SC WHERE 学号 = @sid AND 成绩 >= 60;
+
+        IF @passed_courses = 0
+        BEGIN
+            DELETE FROM SC WHERE 学号 = @sid;
+            DELETE FROM Student WHERE 学号 = @sid;
+        END
+    END
+END;
+测试数据准备
+为了完整验证存储过程内部的三个独立逻辑分支，需要准备以下三组具有代表性的测试学生数据：
+Course（课程表）包含课号 C01 (数据库原理)。
+Student（学生表）初始包含学号 2026001 (张力，有多门及格和优秀成绩)，用于测试常规查询分支。同时包含学号 2026002 (李四，仅选了一门 C01 且分数为 55 分)，用于测试全挂科清退分支。
+使用以下代码动态插入无选课学生测试君，用于测试自动选课分支： INSERT INTO Student (学号, 年龄, 性别, 系号, 姓名) VALUES ('2026009', 20, N'男', 'CS', N'测试君');
+实验结果与分析
+执行命令与结果展示
+测试用例一：常规活跃学生（学号 2026001） 执行命令： 
+EXEC usp_ProcessStudent @sid = '2026001';
+执行结果： 成功弹出查询网格，精确打印出该同学的选课清单： 学号：2026001，姓名：张力，课名：数据库原理，成绩：100 学号：2026001，姓名：张力，课名：数据结构，成绩：85 学号：2026001，姓名：张力，课名：离散数学，成绩：88 学号：2026001，姓名：张力，课名：计算机网络，成绩：80
+
+测试用例二：从未选课的边缘学生（学号 2026009） 执行命令： 
+EXEC usp_ProcessStudent @sid = '2026009';
+执行结果： 第一个查询网格返回空（0行），因为其原先确实没有选课记录。随后执行后台验证查询 SELECT * FROM SC WHERE 学号 = '2026009'; 结果显示该生已被成功插入了爆款课程： 学号：2026009，课号：C01，成绩：0
+
+测试用例三：所有选课均不及格的学生（学号 2026002） 执行命令： 
+EXEC usp_ProcessStudent @sid = '2026002';
+执行结果： 第一个查询网格首先打印出李四唯一的挂科信息：学号：2026002，姓名：李四，课名：数据库原理，成绩：55。 存储过程继续向下执行删除。此时重新扫描主表 SELECT * FROM Student WHERE 学号 = '2026002'; 结果返回空（0行）。扫描子表 SELECT * FROM SC WHERE 学号 = '2026002'; 结果同样返回空（0行）。证明该生及其关联的不及格流水已被数据库彻底安全清退 | 实验结果与分析
+执行命令与结果展示
+测试用例一：常规活跃学生（学号 2026001） 执行命令： 
+EXEC usp_ProcessStudent @sid = '2026001';
+执行结果： 成功弹出查询网格，精确打印出该同学的选课清单： 学号：2026001，姓名：张力，课名：数据库原理，成绩：100 学号：2026001，姓名：张力，课名：数据结构，成绩：85 学号：2026001，姓名：张力，课名：离散数学，成绩：88 学号：2026001，姓名：张力，课名：计算机网络，成绩：80
+
+测试用例二：从未选课的边缘学生（学号 2026009） 执行命令： 
+EXEC usp_ProcessStudent @sid = '2026009';
+执行结果： 第一个查询网格返回空（0行），因为其原先确实没有选课记录。随后执行后台验证查询 SELECT * FROM SC WHERE 学号 = '2026009'; 结果显示该生已被成功插入了爆款课程： 学号：2026009，课号：C01，成绩：0
+
+测试用例三：所有选课均不及格的学生（学号 2026002） 执行命令： 
+EXEC usp_ProcessStudent @sid = '2026002';
+执行结果： 第一个查询网格首先打印出李四唯一的挂科信息：学号：2026002，姓名：李四，课名：数据库原理，成绩：55。 存储过程继续向下执行删除。此时重新扫描主表 SELECT * FROM Student WHERE 学号 = '2026002'; 结果返回空（0行）。扫描子表 SELECT * FROM SC WHERE 学号 = '2026002'; 结果同样返回空（0行）。证明该生及其关联的不及格流水已被数据库彻底安全清退 | 实验结果与分析
+执行命令与结果展示
+测试用例一：常规活跃学生（学号 2026001） 执行命令： 
+EXEC usp_ProcessStudent @sid = '2026001';
+执行结果： 成功弹出查询网格，精确打印出该同学的选课清单： 学号：2026001，姓名：张力，课名：数据库原理，成绩：100 学号：2026001，姓名：张力，课名：数据结构，成绩：85 学号：2026001，姓名：张力，课名：离散数学，成绩：88 学号：2026001，姓名：张力，课名：计算机网络，成绩：80
+
+测试用例二：从未选课的边缘学生（学号 2026009） 执行命令： 
+EXEC usp_ProcessStudent @sid = '2026009';
+执行结果： 第一个查询网格返回空（0行），因为其原先确实没有选课记录。随后执行后台验证查询 SELECT * FROM SC WHERE 学号 = '2026009'; 结果显示该生已被成功插入了爆款课程： 学号：2026009，课号：C01，成绩：0
+
+测试用例三：所有选课均不及格的学生（学号 2026002） 执行命令： 
+EXEC usp_ProcessStudent @sid = '2026002';
+执行结果： 第一个查询网格首先打印出李四唯一的挂科信息：学号：2026002，姓名：李四，课名：数据库原理，成绩：55。 存储过程继续向下执行删除。此时重新扫描主表 SELECT * FROM Student WHERE 学号 = '2026002'; 结果返回空（0行）。扫描子表 SELECT * FROM SC WHERE 学号 = '2026002'; 结果同样返回空（0行）。证明该生及其关联的不及格流水已被数据库彻底安全清退 | 实验结果与分析
+执行命令与结果展示
+测试用例一：常规活跃学生（学号 2026001） 执行命令： 
+EXEC usp_ProcessStudent @sid = '2026001';
+执行结果： 成功弹出查询网格，精确打印出该同学的选课清单： 学号：2026001，姓名：张力，课名：数据库原理，成绩：100 学号：2026001，姓名：张力，课名：数据结构，成绩：85 学号：2026001，姓名：张力，课名：离散数学，成绩：88 学号：2026001，姓名：张力，课名：计算机网络，成绩：80
+
+测试用例二：从未选课的边缘学生（学号 2026009） 执行命令： 
+EXEC usp_ProcessStudent @sid = '2026009';
+执行结果： 第一个查询网格返回空（0行），因为其原先确实没有选课记录。随后执行后台验证查询 SELECT * FROM SC WHERE 学号 = '2026009'; 结果显示该生已被成功插入了爆款课程： 学号：2026009，课号：C01，成绩：0
+
+测试用例三：所有选课均不及格的学生（学号 2026002） 执行命令： 
+EXEC usp_ProcessStudent @sid = '2026002';
+执行结果： 第一个查询网格首先打印出李四唯一的挂科信息：学号：2026002，姓名：李四，课名：数据库原理，成绩：55。 存储过程继续向下执行删除。此时重新扫描主表 SELECT * FROM Student WHERE 学号 = '2026002'; 结果返回空（0行）。扫描子表 SELECT * FROM SC WHERE 学号 = '2026002'; 结果同样返回空（0行）。证明该生及其关联的不及格流水已被数据库彻底安全清退 | 实验结果与分析
+执行命令与结果展示
+测试用例一：常规活跃学生（学号 2026001） 执行命令： 
+EXEC usp_ProcessStudent @sid = '2026001';
+执行结果： 成功弹出查询网格，精确打印出该同学的选课清单： 学号：2026001，姓名：张力，课名：数据库原理，成绩：100 学号：2026001，姓名：张力，课名：数据结构，成绩：85 学号：2026001，姓名：张力，课名：离散数学，成绩：88 学号：2026001，姓名：张力，课名：计算机网络，成绩：80
+
+测试用例二：从未选课的边缘学生（学号 2026009） 执行命令： 
+EXEC usp_ProcessStudent @sid = '2026009';
+执行结果： 第一个查询网格返回空（0行），因为其原先确实没有选课记录。随后执行后台验证查询 SELECT * FROM SC WHERE 学号 = '2026009'; 结果显示该生已被成功插入了爆款课程： 学号：2026009，课号：C01，成绩：0
+
+测试用例三：所有选课均不及格的学生（学号 2026002） 执行命令： 
+EXEC usp_ProcessStudent @sid = '2026002';
+执行结果： 第一个查询网格首先打印出李四唯一的挂科信息：学号：2026002，姓名：李四，课名：数据库原理，成绩：55。 存储过程继续向下执行删除。此时重新扫描主表 SELECT * FROM Student WHERE 学号 = '2026002'; 结果返回空（0行）。扫描子表 SELECT * FROM SC WHERE 学号 = '2026002'; 结果同样返回空（0行）。证明该生及其关联的不及格流水已被数据库彻底安全清退 | 实验结果与分析
+执行命令与结果展示
+测试用例一：常规活跃学生（学号 2026001） 执行命令： 
+EXEC usp_ProcessStudent @sid = '2026001';
+执行结果： 成功弹出查询网格，精确打印出该同学的选课清单： 学号：2026001，姓名：张力，课名：数据库原理，成绩：100 学号：2026001，姓名：张力，课名：数据结构，成绩：85 学号：2026001，姓名：张力，课名：离散数学，成绩：88 学号：2026001，姓名：张力，课名：计算机网络，成绩：80
+
+测试用例二：从未选课的边缘学生（学号 2026009） 执行命令： 
+EXEC usp_ProcessStudent @sid = '2026009';
+执行结果： 第一个查询网格返回空（0行），因为其原先确实没有选课记录。随后执行后台验证查询 SELECT * FROM SC WHERE 学号 = '2026009'; 结果显示该生已被成功插入了爆款课程： 学号：2026009，课号：C01，成绩：0
+
+测试用例三：所有选课均不及格的学生（学号 2026002） 执行命令： 
+EXEC usp_ProcessStudent @sid = '2026002';
+执行结果： 第一个查询网格首先打印出李四唯一的挂科信息：学号：2026002，姓名：李四，课名：数据库原理，成绩：55。 存储过程继续向下执行删除。此时重新扫描主表 SELECT * FROM Student WHERE 学号 = '2026002'; 结果返回空（0行）。扫描子表 SELECT * FROM SC WHERE 学号 = '2026002'; 结果同样返回空（0行）。证明该生及其关联的不及格流水已被数据库彻底安全清退
+实验心得
+本次实验聚焦于存储过程的定义与控制流交互。通过编写具有入口参数的存储过程，我掌握了 DECLARE 变量声明、COUNT 状态拦截以及 IF...ELSE 多层嵌套条件判断的核心语法。在解决未选课全自动补选与全挂科全自动级联清退的复杂业务中，我深刻体会到了存储过程将多条 SQL 语句封装编译、交由底层集中处理的高效性，这不仅极大地减少了客户端与数据库的通信开销，也实现了业务逻辑在数据库层面的高聚合与安全管控。 | 实验心得
+本次实验聚焦于存储过程的定义与控制流交互。通过编写具有入口参数的存储过程，我掌握了 DECLARE 变量声明、COUNT 状态拦截以及 IF...ELSE 多层嵌套条件判断的核心语法。在解决未选课全自动补选与全挂科全自动级联清退的复杂业务中，我深刻体会到了存储过程将多条 SQL 语句封装编译、交由底层集中处理的高效性，这不仅极大地减少了客户端与数据库的通信开销，也实现了业务逻辑在数据库层面的高聚合与安全管控。 | 实验心得
+本次实验聚焦于存储过程的定义与控制流交互。通过编写具有入口参数的存储过程，我掌握了 DECLARE 变量声明、COUNT 状态拦截以及 IF...ELSE 多层嵌套条件判断的核心语法。在解决未选课全自动补选与全挂科全自动级联清退的复杂业务中，我深刻体会到了存储过程将多条 SQL 语句封装编译、交由底层集中处理的高效性，这不仅极大地减少了客户端与数据库的通信开销，也实现了业务逻辑在数据库层面的高聚合与安全管控。 | 实验心得
+本次实验聚焦于存储过程的定义与控制流交互。通过编写具有入口参数的存储过程，我掌握了 DECLARE 变量声明、COUNT 状态拦截以及 IF...ELSE 多层嵌套条件判断的核心语法。在解决未选课全自动补选与全挂科全自动级联清退的复杂业务中，我深刻体会到了存储过程将多条 SQL 语句封装编译、交由底层集中处理的高效性，这不仅极大地减少了客户端与数据库的通信开销，也实现了业务逻辑在数据库层面的高聚合与安全管控。 | 实验心得
+本次实验聚焦于存储过程的定义与控制流交互。通过编写具有入口参数的存储过程，我掌握了 DECLARE 变量声明、COUNT 状态拦截以及 IF...ELSE 多层嵌套条件判断的核心语法。在解决未选课全自动补选与全挂科全自动级联清退的复杂业务中，我深刻体会到了存储过程将多条 SQL 语句封装编译、交由底层集中处理的高效性，这不仅极大地减少了客户端与数据库的通信开销，也实现了业务逻辑在数据库层面的高聚合与安全管控。 | 实验心得
+本次实验聚焦于存储过程的定义与控制流交互。通过编写具有入口参数的存储过程，我掌握了 DECLARE 变量声明、COUNT 状态拦截以及 IF...ELSE 多层嵌套条件判断的核心语法。在解决未选课全自动补选与全挂科全自动级联清退的复杂业务中，我深刻体会到了存储过程将多条 SQL 语句封装编译、交由底层集中处理的高效性，这不仅极大地减少了客户端与数据库的通信开销，也实现了业务逻辑在数据库层面的高聚合与安全管控。
+教师评语 | 教师评语 | 教师评语 | 教师评语 | 教师评语 | 教师评语
+实验成绩
+
+
+
+教师签名：                             批阅日期：     年    月    日 | 实验成绩
+
+
+
+教师签名：                             批阅日期：     年    月    日 | 实验成绩
+
+
+
+教师签名：                             批阅日期：     年    月    日 | 实验成绩
+
+
+
+教师签名：                             批阅日期：     年    月    日 | 实验成绩
+
+
+
+教师签名：                             批阅日期：     年    月    日 | 实验成绩
+
+
+
+教师签名：                             批阅日期：     年    月    日

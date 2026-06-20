@@ -1,0 +1,917 @@
+{
+  "course": "数据库系统概论",
+  "current_stage": 0,
+  "current_node_id": "数据库的4个基本概念数据dbdbmsdbs",
+  "user_level": "unknown",
+  "stage2_pace": "normal",
+  "stage2_position": 0,
+  "stage3_position": 0,
+  "stage3_current_submode": null,
+  "nodes": {
+    "数据库的4个基本概念数据dbdbmsdbs": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "数据库管理系统的六个主要功能": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "数据管理技术三个阶段的比较": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "数据库系统阶段的数据特点整体结构化共享性冗余度独立性统一管控": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "数据库系统的三级模式结构与两级映像": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "数据模型的三要素数据结构操纵完整性约束": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "层次模型与网状模型的数据结构": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "关系模型的数据结构与术语": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "域笛卡尔积关系目或度": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "关系模式及形式化表示候选码主码主属性非码属性全码": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "关系的三种类型基本关系查询结果视图": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "7种关系操作与5种基本操作": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "关系数据语言分类关系代数sql": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "实体完整性与参照完整性外码被参照关系参照关系": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "传统的四种二目集合运算": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "专门的关系运算象集自然连接外连接": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "运用关系代数进行查询": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "sql的三种功能数据定义数据操纵数据控制": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "sql数据定义模式基本表索引的创建删除修改": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "sql单表查询": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "sql连接查询": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "sql嵌套查询": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "sql集合查询": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "sql数据更新insertupdatedelete": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "空值处理": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "视图的定义查询更新及作用": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "数据库安全性概述与不安全因素": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "用户身份鉴别方法静态动态生物特征智能卡": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "自主存取控制grantrevoke": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "数据库角色": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "强制存取控制方法": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "视图机制与审计与加密": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "实体完整性primary-key定义与检查": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "参照完整性foreign-key定义与检查": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "用户定义的完整性属性约束元组约束": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "触发器定义执行删除": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "函数依赖完全部分传递": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "范式1nf2nf3nfbcnf4nf": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "多值依赖": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "数据库设计的基本步骤需求分析概念逻辑物理实施运维": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "e-r模型实体属性联系类型111nmn": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "e-r图向关系模型的转换": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "数据模型的优化水平分解垂直分解": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "数据库物理结构设计存取方法存储结构": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "数据库系统的组成硬件平台软件平台人员": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "过程化sql的块结构": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "游标的定义与使用": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "存储过程与存储函数的定义及区别": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "事务的acid特性": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "故障的种类事务内部故障系统故障介质故障": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "数据转储的方法与特点": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "日志文件的内容与登记原则": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    },
+    "恢复策略与检查点技术": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:56:01Z"
+    }
+  },
+  "completed_nodes": [],
+  "error_nodes": [],
+  "stubborn_nodes": [],
+  "session_history": []
+}

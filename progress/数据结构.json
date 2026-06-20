@@ -1,0 +1,781 @@
+{
+  "course": "数据结构",
+  "current_stage": 0,
+  "current_node_id": "算法时间复杂度分析",
+  "user_level": "unknown",
+  "stage2_pace": "normal",
+  "stage2_position": 0,
+  "stage3_position": 0,
+  "stage3_current_submode": null,
+  "nodes": {
+    "算法时间复杂度分析": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "算法空间复杂度分析": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "顺序表的实现与基本操作": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "单链表的定义与基本操作": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "循环链表与双向链表": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "顺序表与链表的比较": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "链表的程序设计": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "栈的定义与顺序栈实现": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "链栈的表示与实现": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "栈与递归": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "循环队列空与满的判断": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "链队的表示与实现": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "串的存储结构与模式匹配算法": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "kmp算法与bf算法区别": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "next数组的求解": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "特殊矩阵的压缩存储": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "广义表的定义与存储结构": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "二叉树的性质与存储结构": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "二叉树的遍历前序中序后序层次": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "线索二叉树": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "树与森林的转换": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "哈夫曼树与哈夫曼编码": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "二叉树高度叶数节点递归算法": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "并查集及其应用": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "图的存储结构邻接矩阵邻接表": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "图的遍历dfsbfs": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "最小生成树primkruskal": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "最短路径dijkstrafloyd": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "拓扑排序": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "关键路径": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "有向图是否有环的判断": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "顺序查找折半查找分块查找": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "二叉排序树": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "平衡二叉树avl": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "b-树与b树": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "散列表查找": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "除留余数法": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "处理冲突的方法开放地址链地址法": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "平均查找长度计算": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "插入排序直接折半希尔": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "交换排序冒泡快速排序": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "选择排序简单选择堆排序": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "归并排序": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "基数排序": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    },
+    "各排序算法时间空间复杂度对比": {
+      "stage1_done": true,
+      "stage2_done": false,
+      "stage3_passed": null,
+      "stage3_wrong_answers": [],
+      "stage4_done": false,
+      "stage4_retry_count": 0,
+      "stubborn": false,
+      "mastery": "untouched",
+      "sm2": {
+        "interval": 0,
+        "ease": 2.5,
+        "repetitions": 0,
+        "next_review": null
+      },
+      "last_updated": "2026-06-18T01:51:09Z"
+    }
+  },
+  "completed_nodes": [],
+  "error_nodes": [],
+  "stubborn_nodes": [],
+  "session_history": []
+}

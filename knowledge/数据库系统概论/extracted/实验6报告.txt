@@ -1,0 +1,487 @@
+计算机科学技术学院实验报告
+注：项目性质为 演示型、验证型、设计型、综合型和创新型。
+课程名称 | 数据库原理与应用 | 数据库原理与应用 | 数据库原理与应用 | 学   号 | 42
+实验项目 | 触发器的定义。 | 触发器的定义。 | 触发器的定义。 | 姓   名 | 祁勇
+学    时 | 2 | 项目性质 | 验证型 | 班   级 | 2405311
+指导教师 | 颜雁 | 实验地点 | 实训楼409 | 日   期 | 2026年5月23日
+实验目的和要求
+熟悉触发器的定义和使用。 | 实验目的和要求
+熟悉触发器的定义和使用。 | 实验目的和要求
+熟悉触发器的定义和使用。 | 实验目的和要求
+熟悉触发器的定义和使用。 | 实验目的和要求
+熟悉触发器的定义和使用。 | 实验目的和要求
+熟悉触发器的定义和使用。
+实验环境
+操作系统： Windows 10/11
+数据库管理系统： SQL Server 2025 
+管理工具： SQL Server Management Studio (SSMS) | 实验环境
+操作系统： Windows 10/11
+数据库管理系统： SQL Server 2025 
+管理工具： SQL Server Management Studio (SSMS) | 实验环境
+操作系统： Windows 10/11
+数据库管理系统： SQL Server 2025 
+管理工具： SQL Server Management Studio (SSMS) | 实验环境
+操作系统： Windows 10/11
+数据库管理系统： SQL Server 2025 
+管理工具： SQL Server Management Studio (SSMS) | 实验环境
+操作系统： Windows 10/11
+数据库管理系统： SQL Server 2025 
+管理工具： SQL Server Management Studio (SSMS) | 实验环境
+操作系统： Windows 10/11
+数据库管理系统： SQL Server 2025 
+管理工具： SQL Server Management Studio (SSMS)
+实验内容与过程
+学生（学号，年龄，性别，系名） 
+课程（课号，课名，学分，学时）
+选课（学号，课号，成绩）
+1．建立学生表的insert触发器，若向学生表中插入一条记录，则自动向选课表中插入一行，令该生选一门选修人数最多的课。
+2．在建立学生表的delete触发器，若选课表中该生有选课记录，则拒绝删除，要求在删除学生信息同时，将相关表中的信息全部删除。
+代码：
+CREATE TRIGGER tri_Student_Insert
+ON Student
+AFTER INSERT
+AS
+BEGIN
+    -- 定义变量存放新同学的学号和人数最多的课号
+    DECLARE @new_sid char(10);
+    DECLARE @max_cid char(10);
+
+    -- 从 Inserted 临时表中获取刚插入的学生学号
+    SELECT @new_sid = 学号 FROM Inserted;
+
+    -- 通过子查询找出选课人数最多（出现次数最多）的课号
+    SELECT TOP 1 @max_cid = 课号 
+    FROM SC 
+    GROUP BY 课号 
+    ORDER BY COUNT(学号) DESC;
+
+    -- 自动向选课表插入关联行
+    IF @max_cid IS NOT NULL
+    BEGIN
+        INSERT INTO SC (学号, 课号, 成绩) 
+        VALUES (@new_sid, @max_cid, NULL);
+    END
+END;
+
+验证：
+INSERT INTO Student (学号, 年龄, 性别, 系号, 姓名) 
+VALUES ('2026006', 20, N'男', 'CS', N'钱八');
+
+-- 检查选课表，看系统是否自动帮他选了“数据库原理(C01)”
+SELECT * FROM SC WHERE 学号 = '2026006';
+
+题目2：
+CREATE TRIGGER tri_Student_Delete
+ON Student
+INSTEAD OF DELETE
+AS
+BEGIN
+    --声明变量存放即将被删除的学号
+    DECLARE @del_sid char(10);
+    SELECT @del_sid = 学号 FROM Deleted;
+
+    --级联删除：先去彻底清除该学生在 SC 表里的历史选课记录
+    DELETE FROM SC WHERE 学号 = @del_sid;
+
+    -- 清理干净后，安全地将该学生从 Student 表中抹去
+    DELETE FROM Student WHERE 学号 = @del_sid;
+    END;
+
+验证：
+-- 执行删除命令
+DELETE FROM Student WHERE 学号 = '2026005';
+
+-- 检查两张表，验证级联删除结果
+SELECT * FROM Student WHERE 学号 = '2026005';
+SELECT * FROM SC WHERE 学号 = '2026005'; | 实验内容与过程
+学生（学号，年龄，性别，系名） 
+课程（课号，课名，学分，学时）
+选课（学号，课号，成绩）
+1．建立学生表的insert触发器，若向学生表中插入一条记录，则自动向选课表中插入一行，令该生选一门选修人数最多的课。
+2．在建立学生表的delete触发器，若选课表中该生有选课记录，则拒绝删除，要求在删除学生信息同时，将相关表中的信息全部删除。
+代码：
+CREATE TRIGGER tri_Student_Insert
+ON Student
+AFTER INSERT
+AS
+BEGIN
+    -- 定义变量存放新同学的学号和人数最多的课号
+    DECLARE @new_sid char(10);
+    DECLARE @max_cid char(10);
+
+    -- 从 Inserted 临时表中获取刚插入的学生学号
+    SELECT @new_sid = 学号 FROM Inserted;
+
+    -- 通过子查询找出选课人数最多（出现次数最多）的课号
+    SELECT TOP 1 @max_cid = 课号 
+    FROM SC 
+    GROUP BY 课号 
+    ORDER BY COUNT(学号) DESC;
+
+    -- 自动向选课表插入关联行
+    IF @max_cid IS NOT NULL
+    BEGIN
+        INSERT INTO SC (学号, 课号, 成绩) 
+        VALUES (@new_sid, @max_cid, NULL);
+    END
+END;
+
+验证：
+INSERT INTO Student (学号, 年龄, 性别, 系号, 姓名) 
+VALUES ('2026006', 20, N'男', 'CS', N'钱八');
+
+-- 检查选课表，看系统是否自动帮他选了“数据库原理(C01)”
+SELECT * FROM SC WHERE 学号 = '2026006';
+
+题目2：
+CREATE TRIGGER tri_Student_Delete
+ON Student
+INSTEAD OF DELETE
+AS
+BEGIN
+    --声明变量存放即将被删除的学号
+    DECLARE @del_sid char(10);
+    SELECT @del_sid = 学号 FROM Deleted;
+
+    --级联删除：先去彻底清除该学生在 SC 表里的历史选课记录
+    DELETE FROM SC WHERE 学号 = @del_sid;
+
+    -- 清理干净后，安全地将该学生从 Student 表中抹去
+    DELETE FROM Student WHERE 学号 = @del_sid;
+    END;
+
+验证：
+-- 执行删除命令
+DELETE FROM Student WHERE 学号 = '2026005';
+
+-- 检查两张表，验证级联删除结果
+SELECT * FROM Student WHERE 学号 = '2026005';
+SELECT * FROM SC WHERE 学号 = '2026005'; | 实验内容与过程
+学生（学号，年龄，性别，系名） 
+课程（课号，课名，学分，学时）
+选课（学号，课号，成绩）
+1．建立学生表的insert触发器，若向学生表中插入一条记录，则自动向选课表中插入一行，令该生选一门选修人数最多的课。
+2．在建立学生表的delete触发器，若选课表中该生有选课记录，则拒绝删除，要求在删除学生信息同时，将相关表中的信息全部删除。
+代码：
+CREATE TRIGGER tri_Student_Insert
+ON Student
+AFTER INSERT
+AS
+BEGIN
+    -- 定义变量存放新同学的学号和人数最多的课号
+    DECLARE @new_sid char(10);
+    DECLARE @max_cid char(10);
+
+    -- 从 Inserted 临时表中获取刚插入的学生学号
+    SELECT @new_sid = 学号 FROM Inserted;
+
+    -- 通过子查询找出选课人数最多（出现次数最多）的课号
+    SELECT TOP 1 @max_cid = 课号 
+    FROM SC 
+    GROUP BY 课号 
+    ORDER BY COUNT(学号) DESC;
+
+    -- 自动向选课表插入关联行
+    IF @max_cid IS NOT NULL
+    BEGIN
+        INSERT INTO SC (学号, 课号, 成绩) 
+        VALUES (@new_sid, @max_cid, NULL);
+    END
+END;
+
+验证：
+INSERT INTO Student (学号, 年龄, 性别, 系号, 姓名) 
+VALUES ('2026006', 20, N'男', 'CS', N'钱八');
+
+-- 检查选课表，看系统是否自动帮他选了“数据库原理(C01)”
+SELECT * FROM SC WHERE 学号 = '2026006';
+
+题目2：
+CREATE TRIGGER tri_Student_Delete
+ON Student
+INSTEAD OF DELETE
+AS
+BEGIN
+    --声明变量存放即将被删除的学号
+    DECLARE @del_sid char(10);
+    SELECT @del_sid = 学号 FROM Deleted;
+
+    --级联删除：先去彻底清除该学生在 SC 表里的历史选课记录
+    DELETE FROM SC WHERE 学号 = @del_sid;
+
+    -- 清理干净后，安全地将该学生从 Student 表中抹去
+    DELETE FROM Student WHERE 学号 = @del_sid;
+    END;
+
+验证：
+-- 执行删除命令
+DELETE FROM Student WHERE 学号 = '2026005';
+
+-- 检查两张表，验证级联删除结果
+SELECT * FROM Student WHERE 学号 = '2026005';
+SELECT * FROM SC WHERE 学号 = '2026005'; | 实验内容与过程
+学生（学号，年龄，性别，系名） 
+课程（课号，课名，学分，学时）
+选课（学号，课号，成绩）
+1．建立学生表的insert触发器，若向学生表中插入一条记录，则自动向选课表中插入一行，令该生选一门选修人数最多的课。
+2．在建立学生表的delete触发器，若选课表中该生有选课记录，则拒绝删除，要求在删除学生信息同时，将相关表中的信息全部删除。
+代码：
+CREATE TRIGGER tri_Student_Insert
+ON Student
+AFTER INSERT
+AS
+BEGIN
+    -- 定义变量存放新同学的学号和人数最多的课号
+    DECLARE @new_sid char(10);
+    DECLARE @max_cid char(10);
+
+    -- 从 Inserted 临时表中获取刚插入的学生学号
+    SELECT @new_sid = 学号 FROM Inserted;
+
+    -- 通过子查询找出选课人数最多（出现次数最多）的课号
+    SELECT TOP 1 @max_cid = 课号 
+    FROM SC 
+    GROUP BY 课号 
+    ORDER BY COUNT(学号) DESC;
+
+    -- 自动向选课表插入关联行
+    IF @max_cid IS NOT NULL
+    BEGIN
+        INSERT INTO SC (学号, 课号, 成绩) 
+        VALUES (@new_sid, @max_cid, NULL);
+    END
+END;
+
+验证：
+INSERT INTO Student (学号, 年龄, 性别, 系号, 姓名) 
+VALUES ('2026006', 20, N'男', 'CS', N'钱八');
+
+-- 检查选课表，看系统是否自动帮他选了“数据库原理(C01)”
+SELECT * FROM SC WHERE 学号 = '2026006';
+
+题目2：
+CREATE TRIGGER tri_Student_Delete
+ON Student
+INSTEAD OF DELETE
+AS
+BEGIN
+    --声明变量存放即将被删除的学号
+    DECLARE @del_sid char(10);
+    SELECT @del_sid = 学号 FROM Deleted;
+
+    --级联删除：先去彻底清除该学生在 SC 表里的历史选课记录
+    DELETE FROM SC WHERE 学号 = @del_sid;
+
+    -- 清理干净后，安全地将该学生从 Student 表中抹去
+    DELETE FROM Student WHERE 学号 = @del_sid;
+    END;
+
+验证：
+-- 执行删除命令
+DELETE FROM Student WHERE 学号 = '2026005';
+
+-- 检查两张表，验证级联删除结果
+SELECT * FROM Student WHERE 学号 = '2026005';
+SELECT * FROM SC WHERE 学号 = '2026005'; | 实验内容与过程
+学生（学号，年龄，性别，系名） 
+课程（课号，课名，学分，学时）
+选课（学号，课号，成绩）
+1．建立学生表的insert触发器，若向学生表中插入一条记录，则自动向选课表中插入一行，令该生选一门选修人数最多的课。
+2．在建立学生表的delete触发器，若选课表中该生有选课记录，则拒绝删除，要求在删除学生信息同时，将相关表中的信息全部删除。
+代码：
+CREATE TRIGGER tri_Student_Insert
+ON Student
+AFTER INSERT
+AS
+BEGIN
+    -- 定义变量存放新同学的学号和人数最多的课号
+    DECLARE @new_sid char(10);
+    DECLARE @max_cid char(10);
+
+    -- 从 Inserted 临时表中获取刚插入的学生学号
+    SELECT @new_sid = 学号 FROM Inserted;
+
+    -- 通过子查询找出选课人数最多（出现次数最多）的课号
+    SELECT TOP 1 @max_cid = 课号 
+    FROM SC 
+    GROUP BY 课号 
+    ORDER BY COUNT(学号) DESC;
+
+    -- 自动向选课表插入关联行
+    IF @max_cid IS NOT NULL
+    BEGIN
+        INSERT INTO SC (学号, 课号, 成绩) 
+        VALUES (@new_sid, @max_cid, NULL);
+    END
+END;
+
+验证：
+INSERT INTO Student (学号, 年龄, 性别, 系号, 姓名) 
+VALUES ('2026006', 20, N'男', 'CS', N'钱八');
+
+-- 检查选课表，看系统是否自动帮他选了“数据库原理(C01)”
+SELECT * FROM SC WHERE 学号 = '2026006';
+
+题目2：
+CREATE TRIGGER tri_Student_Delete
+ON Student
+INSTEAD OF DELETE
+AS
+BEGIN
+    --声明变量存放即将被删除的学号
+    DECLARE @del_sid char(10);
+    SELECT @del_sid = 学号 FROM Deleted;
+
+    --级联删除：先去彻底清除该学生在 SC 表里的历史选课记录
+    DELETE FROM SC WHERE 学号 = @del_sid;
+
+    -- 清理干净后，安全地将该学生从 Student 表中抹去
+    DELETE FROM Student WHERE 学号 = @del_sid;
+    END;
+
+验证：
+-- 执行删除命令
+DELETE FROM Student WHERE 学号 = '2026005';
+
+-- 检查两张表，验证级联删除结果
+SELECT * FROM Student WHERE 学号 = '2026005';
+SELECT * FROM SC WHERE 学号 = '2026005'; | 实验内容与过程
+学生（学号，年龄，性别，系名） 
+课程（课号，课名，学分，学时）
+选课（学号，课号，成绩）
+1．建立学生表的insert触发器，若向学生表中插入一条记录，则自动向选课表中插入一行，令该生选一门选修人数最多的课。
+2．在建立学生表的delete触发器，若选课表中该生有选课记录，则拒绝删除，要求在删除学生信息同时，将相关表中的信息全部删除。
+代码：
+CREATE TRIGGER tri_Student_Insert
+ON Student
+AFTER INSERT
+AS
+BEGIN
+    -- 定义变量存放新同学的学号和人数最多的课号
+    DECLARE @new_sid char(10);
+    DECLARE @max_cid char(10);
+
+    -- 从 Inserted 临时表中获取刚插入的学生学号
+    SELECT @new_sid = 学号 FROM Inserted;
+
+    -- 通过子查询找出选课人数最多（出现次数最多）的课号
+    SELECT TOP 1 @max_cid = 课号 
+    FROM SC 
+    GROUP BY 课号 
+    ORDER BY COUNT(学号) DESC;
+
+    -- 自动向选课表插入关联行
+    IF @max_cid IS NOT NULL
+    BEGIN
+        INSERT INTO SC (学号, 课号, 成绩) 
+        VALUES (@new_sid, @max_cid, NULL);
+    END
+END;
+
+验证：
+INSERT INTO Student (学号, 年龄, 性别, 系号, 姓名) 
+VALUES ('2026006', 20, N'男', 'CS', N'钱八');
+
+-- 检查选课表，看系统是否自动帮他选了“数据库原理(C01)”
+SELECT * FROM SC WHERE 学号 = '2026006';
+
+题目2：
+CREATE TRIGGER tri_Student_Delete
+ON Student
+INSTEAD OF DELETE
+AS
+BEGIN
+    --声明变量存放即将被删除的学号
+    DECLARE @del_sid char(10);
+    SELECT @del_sid = 学号 FROM Deleted;
+
+    --级联删除：先去彻底清除该学生在 SC 表里的历史选课记录
+    DELETE FROM SC WHERE 学号 = @del_sid;
+
+    -- 清理干净后，安全地将该学生从 Student 表中抹去
+    DELETE FROM Student WHERE 学号 = @del_sid;
+    END;
+
+验证：
+-- 执行删除命令
+DELETE FROM Student WHERE 学号 = '2026005';
+
+-- 检查两张表，验证级联删除结果
+SELECT * FROM Student WHERE 学号 = '2026005';
+SELECT * FROM SC WHERE 学号 = '2026005';
+实验结果与分析
+题目一：
+在创建触发器成功之后，我向 Student 表里插入一个新学生“钱八”，在 SC 表里会自动多出一条记录：2026006 | C01 | NULL。因为在我的初始数据里，C01（数据库原理）有 5 个人选，人数最多。
+
+
+题目2：
+创建成功之后，我尝试删除学号为 2026005（刘七）的学生，他在 SC 表里原本有 3 条选课记录，两条查询语句均返回空结果（0行），且系统没有抛出任何外键约束报错，说明触发器成功规避了约束，完成了全自动的级联清理。 | 实验结果与分析
+题目一：
+在创建触发器成功之后，我向 Student 表里插入一个新学生“钱八”，在 SC 表里会自动多出一条记录：2026006 | C01 | NULL。因为在我的初始数据里，C01（数据库原理）有 5 个人选，人数最多。
+
+
+题目2：
+创建成功之后，我尝试删除学号为 2026005（刘七）的学生，他在 SC 表里原本有 3 条选课记录，两条查询语句均返回空结果（0行），且系统没有抛出任何外键约束报错，说明触发器成功规避了约束，完成了全自动的级联清理。 | 实验结果与分析
+题目一：
+在创建触发器成功之后，我向 Student 表里插入一个新学生“钱八”，在 SC 表里会自动多出一条记录：2026006 | C01 | NULL。因为在我的初始数据里，C01（数据库原理）有 5 个人选，人数最多。
+
+
+题目2：
+创建成功之后，我尝试删除学号为 2026005（刘七）的学生，他在 SC 表里原本有 3 条选课记录，两条查询语句均返回空结果（0行），且系统没有抛出任何外键约束报错，说明触发器成功规避了约束，完成了全自动的级联清理。 | 实验结果与分析
+题目一：
+在创建触发器成功之后，我向 Student 表里插入一个新学生“钱八”，在 SC 表里会自动多出一条记录：2026006 | C01 | NULL。因为在我的初始数据里，C01（数据库原理）有 5 个人选，人数最多。
+
+
+题目2：
+创建成功之后，我尝试删除学号为 2026005（刘七）的学生，他在 SC 表里原本有 3 条选课记录，两条查询语句均返回空结果（0行），且系统没有抛出任何外键约束报错，说明触发器成功规避了约束，完成了全自动的级联清理。 | 实验结果与分析
+题目一：
+在创建触发器成功之后，我向 Student 表里插入一个新学生“钱八”，在 SC 表里会自动多出一条记录：2026006 | C01 | NULL。因为在我的初始数据里，C01（数据库原理）有 5 个人选，人数最多。
+
+
+题目2：
+创建成功之后，我尝试删除学号为 2026005（刘七）的学生，他在 SC 表里原本有 3 条选课记录，两条查询语句均返回空结果（0行），且系统没有抛出任何外键约束报错，说明触发器成功规避了约束，完成了全自动的级联清理。 | 实验结果与分析
+题目一：
+在创建触发器成功之后，我向 Student 表里插入一个新学生“钱八”，在 SC 表里会自动多出一条记录：2026006 | C01 | NULL。因为在我的初始数据里，C01（数据库原理）有 5 个人选，人数最多。
+
+
+题目2：
+创建成功之后，我尝试删除学号为 2026005（刘七）的学生，他在 SC 表里原本有 3 条选课记录，两条查询语句均返回空结果（0行），且系统没有抛出任何外键约束报错，说明触发器成功规避了约束，完成了全自动的级联清理。
+实验心得
+本次实验聚焦于触发器的设计与应用，使我深入掌握了使用 Inserted 和 Deleted 临时表处理动态数据的核心技术。在编写 INSERT 触发器时，我学会了如何通过逻辑派生，结合聚合函数实现复杂的自动化业务托管，让系统自适应为新学生补全选课记录。
+在编写 DELETE 触发器时，面对外键参照完整性的制约，我认识到了 INSTEAD OF 触发器的强大拦截机制。通过“先子表、后主表”的逆向级联清除顺序，不仅完美规避了数据库的外键报错，还实现了数据生态的深度清理。这让我深刻体会到触发器在维护数据一致性与自动化事务控制中不可替代的防御价值。 | 实验心得
+本次实验聚焦于触发器的设计与应用，使我深入掌握了使用 Inserted 和 Deleted 临时表处理动态数据的核心技术。在编写 INSERT 触发器时，我学会了如何通过逻辑派生，结合聚合函数实现复杂的自动化业务托管，让系统自适应为新学生补全选课记录。
+在编写 DELETE 触发器时，面对外键参照完整性的制约，我认识到了 INSTEAD OF 触发器的强大拦截机制。通过“先子表、后主表”的逆向级联清除顺序，不仅完美规避了数据库的外键报错，还实现了数据生态的深度清理。这让我深刻体会到触发器在维护数据一致性与自动化事务控制中不可替代的防御价值。 | 实验心得
+本次实验聚焦于触发器的设计与应用，使我深入掌握了使用 Inserted 和 Deleted 临时表处理动态数据的核心技术。在编写 INSERT 触发器时，我学会了如何通过逻辑派生，结合聚合函数实现复杂的自动化业务托管，让系统自适应为新学生补全选课记录。
+在编写 DELETE 触发器时，面对外键参照完整性的制约，我认识到了 INSTEAD OF 触发器的强大拦截机制。通过“先子表、后主表”的逆向级联清除顺序，不仅完美规避了数据库的外键报错，还实现了数据生态的深度清理。这让我深刻体会到触发器在维护数据一致性与自动化事务控制中不可替代的防御价值。 | 实验心得
+本次实验聚焦于触发器的设计与应用，使我深入掌握了使用 Inserted 和 Deleted 临时表处理动态数据的核心技术。在编写 INSERT 触发器时，我学会了如何通过逻辑派生，结合聚合函数实现复杂的自动化业务托管，让系统自适应为新学生补全选课记录。
+在编写 DELETE 触发器时，面对外键参照完整性的制约，我认识到了 INSTEAD OF 触发器的强大拦截机制。通过“先子表、后主表”的逆向级联清除顺序，不仅完美规避了数据库的外键报错，还实现了数据生态的深度清理。这让我深刻体会到触发器在维护数据一致性与自动化事务控制中不可替代的防御价值。 | 实验心得
+本次实验聚焦于触发器的设计与应用，使我深入掌握了使用 Inserted 和 Deleted 临时表处理动态数据的核心技术。在编写 INSERT 触发器时，我学会了如何通过逻辑派生，结合聚合函数实现复杂的自动化业务托管，让系统自适应为新学生补全选课记录。
+在编写 DELETE 触发器时，面对外键参照完整性的制约，我认识到了 INSTEAD OF 触发器的强大拦截机制。通过“先子表、后主表”的逆向级联清除顺序，不仅完美规避了数据库的外键报错，还实现了数据生态的深度清理。这让我深刻体会到触发器在维护数据一致性与自动化事务控制中不可替代的防御价值。 | 实验心得
+本次实验聚焦于触发器的设计与应用，使我深入掌握了使用 Inserted 和 Deleted 临时表处理动态数据的核心技术。在编写 INSERT 触发器时，我学会了如何通过逻辑派生，结合聚合函数实现复杂的自动化业务托管，让系统自适应为新学生补全选课记录。
+在编写 DELETE 触发器时，面对外键参照完整性的制约，我认识到了 INSTEAD OF 触发器的强大拦截机制。通过“先子表、后主表”的逆向级联清除顺序，不仅完美规避了数据库的外键报错，还实现了数据生态的深度清理。这让我深刻体会到触发器在维护数据一致性与自动化事务控制中不可替代的防御价值。
+教师评语 | 教师评语 | 教师评语 | 教师评语 | 教师评语 | 教师评语
+实验成绩
+
+
+
+教师签名：                             批阅日期：     年    月    日 | 实验成绩
+
+
+
+教师签名：                             批阅日期：     年    月    日 | 实验成绩
+
+
+
+教师签名：                             批阅日期：     年    月    日 | 实验成绩
+
+
+
+教师签名：                             批阅日期：     年    月    日 | 实验成绩
+
+
+
+教师签名：                             批阅日期：     年    月    日 | 实验成绩
+
+
+
+教师签名：                             批阅日期：     年    月    日

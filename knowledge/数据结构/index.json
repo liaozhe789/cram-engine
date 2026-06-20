@@ -1,0 +1,1071 @@
+{
+  "course": "数据结构",
+  "version": 2,
+  "nodes": [
+    {
+      "id": "算法时间复杂度分析",
+      "label": "算法时间复杂度分析",
+      "parent": "基础概念",
+      "weight": "key_point",
+      "prerequisites": [],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 0
+    },
+    {
+      "id": "算法空间复杂度分析",
+      "label": "算法空间复杂度分析",
+      "parent": "基础概念",
+      "weight": "key_point",
+      "prerequisites": [
+        "算法时间复杂度分析"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 1
+    },
+    {
+      "id": "顺序表的实现与基本操作",
+      "label": "顺序表的实现与基本操作",
+      "parent": "线性结构",
+      "weight": "key_point",
+      "prerequisites": [
+        "算法空间复杂度分析"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 2
+    },
+    {
+      "id": "单链表的定义与基本操作",
+      "label": "单链表的定义与基本操作",
+      "parent": "线性结构",
+      "weight": "key_point",
+      "prerequisites": [
+        "顺序表的实现与基本操作"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 3
+    },
+    {
+      "id": "循环链表与双向链表",
+      "label": "循环链表与双向链表",
+      "parent": "线性结构",
+      "weight": "key_point",
+      "prerequisites": [
+        "单链表的定义与基本操作"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 4
+    },
+    {
+      "id": "顺序表与链表的比较",
+      "label": "顺序表与链表的比较",
+      "parent": "线性结构",
+      "weight": "key_point",
+      "prerequisites": [
+        "循环链表与双向链表"
+      ],
+      "hooks": [
+        "contrast"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 5
+    },
+    {
+      "id": "链表的程序设计",
+      "label": "链表的程序设计",
+      "parent": "线性结构",
+      "weight": "must_know",
+      "prerequisites": [
+        "顺序表与链表的比较"
+      ],
+      "hooks": [
+        "contrast",
+        "acronym"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": ".1 简单选择排序\n\n8.4.2 树形选择排序\n\n8.4.3 堆排序\n\n8.5 归并排序\n\n8.6 基数排序\n\n8.6.1 多关键字的排序\n\n8.6.2 链式基数排序\n\n8.7 外部排序\n\n8.7.1 外部排序的基本方法\n\n8.7.2 多路平衡归并的实现\n\n8.7.3 置换-选择排序\n\n8.7.4 最佳归并树\n\n8.8 LeetCode 算法题\n\n8.9 小结\n\n习题\n\n### \n\n# 重点:\n\n链表的程序设计\n循环队列（空，满）\nkmp，bf区别，提升，流程\nnext数组\n遍历二叉树\n哈夫曼编码\n二叉树的高度叶数节点递归\n图的应用（最小生成树，最短路径，拓补排序，关键路径）有向图是否有环，图形结构，线性结构\n散列表的查找\n除留余数\n处理冲突的方法\n开放地址，链地址法，算平均查找长度\n快速排序，堆排序",
+      "source_materials": [],
+      "order_index": 6
+    },
+    {
+      "id": "栈的定义与顺序栈实现",
+      "label": "栈的定义与顺序栈实现",
+      "parent": "线性结构",
+      "weight": "key_point",
+      "prerequisites": [
+        "链表的程序设计",
+        "顺序表与链表的比较"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 7
+    },
+    {
+      "id": "链栈的表示与实现",
+      "label": "链栈的表示与实现",
+      "parent": "线性结构",
+      "weight": "key_point",
+      "prerequisites": [
+        "链表的程序设计",
+        "栈的定义与顺序栈实现"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 8
+    },
+    {
+      "id": "栈与递归",
+      "label": "栈与递归",
+      "parent": "基础概念",
+      "weight": "key_point",
+      "prerequisites": [
+        "算法空间复杂度分析"
+      ],
+      "hooks": [
+        "acronym"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "的合并\n\n2.7.2 有序表的合并\n\n2.8 案例分析与实现\n\n2.9 LeetCode 算法练习题\n\n2.10 小结\n\n习题\n\n### 第3章 栈和队列\n\n3.1 栈和队列的定义和特点\n\n3.1.1 栈的定义和特点\n\n3.1.2 队列的定义和特点\n\n3.2 案例引入\n\n3.3 栈的表示和实现\n\n3.3.1 栈的类型定义\n\n3.3.2 顺序栈的表示和实现\n\n3.3.3 链栈的表示和实现\n\n3.4 栈与递归\n\n3.4.1 采用递归算法解决的问题\n\n3.4.2 递归过程与递归工作栈\n\n3.4.3 递归算法的效率分析\n\n3.4.4 利用栈将递归转换为非递归的方法\n\n3.5 队列的表示和实现\n\n3.5.1 队列的类型定义\n\n3.5.2 顺序队的表示和实现\n\n3.5.3 链队的表示和实现\n\n3.6 案例分析与实现\n\n3.7 LeetCode 算法练习题\n\n3.8 小结\n\n习题\n\n### 第4章 串、数组和广",
+      "source_materials": [],
+      "order_index": 9
+    },
+    {
+      "id": "循环队列空与满的判断",
+      "label": "循环队列（空与满的判断）",
+      "parent": "线性结构",
+      "weight": "must_know",
+      "prerequisites": [
+        "链表的程序设计",
+        "链栈的表示与实现"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 10
+    },
+    {
+      "id": "链队的表示与实现",
+      "label": "链队的表示与实现",
+      "parent": "基础概念",
+      "weight": "key_point",
+      "prerequisites": [
+        "栈与递归"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 11
+    },
+    {
+      "id": "串的存储结构与模式匹配算法",
+      "label": "串的存储结构与模式匹配算法",
+      "parent": "基础概念",
+      "weight": "key_point",
+      "prerequisites": [
+        "链队的表示与实现"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 12
+    },
+    {
+      "id": "kmp算法与bf算法区别",
+      "label": "KMP算法与BF算法区别",
+      "parent": "线性结构",
+      "weight": "must_know",
+      "prerequisites": [
+        "循环队列空与满的判断",
+        "链栈的表示与实现"
+      ],
+      "hooks": [
+        "contrast"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 13
+    },
+    {
+      "id": "next数组的求解",
+      "label": "next数组的求解",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "串的存储结构与模式匹配算法"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 14
+    },
+    {
+      "id": "特殊矩阵的压缩存储",
+      "label": "特殊矩阵的压缩存储",
+      "parent": "矩阵与广义表",
+      "weight": "key_point",
+      "prerequisites": [
+        "next数组的求解"
+      ],
+      "hooks": [
+        "absurd",
+        "acronym"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "示和实现\n\n3.6 案例分析与实现\n\n3.7 LeetCode 算法练习题\n\n3.8 小结\n\n习题\n\n### 第4章 串、数组和广义表\n\n4.1 串的定义\n\n4.2 案例引入\n\n4.3 串的类型定义、存储结构及其运算\n\n4.3.1 串的抽象类型定义\n\n4.3.2 串的存储结构\n\n4.3.3 串的模式匹配算法\n\n4.4 数组\n\n4.4.1 数组的类型定义\n\n4.4.2 数组的顺序存储\n\n4.4.3 特殊矩阵的压缩存储\n\n4.5 广义表\n\n4.5.1 广义表的定义\n\n4.5.2 广义表的存储结构\n\n4.6 案例分析与实现\n\n4.7 LeetCode 算法练习题\n\n4.8 小结\n\n习题\n\n### 第5章 树和二叉树\n\n5.1 树和二叉树的定义\n\n5.1.1 树的定义\n\n5.1.2 树的基本术语\n\n5.1.3 二叉树的定义\n\n5.2 案例引入\n\n5.3 树和二叉树的抽象数据类型\n\n5.4 二叉树的性质和存储结构",
+      "source_materials": [],
+      "order_index": 15
+    },
+    {
+      "id": "广义表的定义与存储结构",
+      "label": "广义表的定义与存储结构",
+      "parent": "基础概念",
+      "weight": "key_point",
+      "prerequisites": [
+        "next数组的求解",
+        "串的存储结构与模式匹配算法"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 16
+    },
+    {
+      "id": "二叉树的性质与存储结构",
+      "label": "二叉树的性质与存储结构",
+      "parent": "基础概念",
+      "weight": "key_point",
+      "prerequisites": [
+        "next数组的求解",
+        "广义表的定义与存储结构"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 17
+    },
+    {
+      "id": "二叉树的遍历前序中序后序层次",
+      "label": "二叉树的遍历（前序/中序/后序/层次）",
+      "parent": "树结构",
+      "weight": "must_know",
+      "prerequisites": [
+        "二叉树的性质与存储结构"
+      ],
+      "hooks": [
+        "acronym"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 18
+    },
+    {
+      "id": "线索二叉树",
+      "label": "线索二叉树",
+      "parent": "树结构",
+      "weight": "key_point",
+      "prerequisites": [
+        "二叉树的遍历前序中序后序层次"
+      ],
+      "hooks": [
+        "absurd",
+        "acronym"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "4.6 案例分析与实现\n\n4.7 LeetCode 算法练习题\n\n4.8 小结\n\n习题\n\n### 第5章 树和二叉树\n\n5.1 树和二叉树的定义\n\n5.1.1 树的定义\n\n5.1.2 树的基本术语\n\n5.1.3 二叉树的定义\n\n5.2 案例引入\n\n5.3 树和二叉树的抽象数据类型\n\n5.4 二叉树的性质和存储结构\n\n5.4.1 二叉树的性质\n\n5.4.2 二叉树的存储结构\n\n5.5 遍历二叉树和线索二叉树\n\n5.5.1 遍历二叉树\n\n5.5.2 线索二叉树\n\n5.6 树和森林\n\n5.6.1 树的存储结构\n\n5.6.2 森林与二叉树的转换\n\n5.6.3 树和森林的遍历\n\n5.7 哈夫曼树及其应用\n\n5.7.1 哈夫曼树的基本概念\n\n5.7.2 哈夫曼树的构造算法\n\n5.7.3 哈夫曼编码\n\n5.8 并查集及其应用\n\n5.8.1 并查集的基本概念\n\n5.8.2 并查集的实现及优化\n\n5.9 案例分析与",
+      "source_materials": [],
+      "order_index": 19
+    },
+    {
+      "id": "树与森林的转换",
+      "label": "树与森林的转换",
+      "parent": "树结构",
+      "weight": "key_point",
+      "prerequisites": [
+        "二叉树的遍历前序中序后序层次",
+        "线索二叉树"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 20
+    },
+    {
+      "id": "哈夫曼树与哈夫曼编码",
+      "label": "哈夫曼树与哈夫曼编码",
+      "parent": "树结构",
+      "weight": "must_know",
+      "prerequisites": [
+        "二叉树的遍历前序中序后序层次",
+        "树与森林的转换"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 21
+    },
+    {
+      "id": "二叉树高度叶数节点递归算法",
+      "label": "二叉树高度/叶数/节点递归算法",
+      "parent": "树结构",
+      "weight": "must_know",
+      "prerequisites": [
+        "哈夫曼树与哈夫曼编码",
+        "树与森林的转换"
+      ],
+      "hooks": [
+        "contrast",
+        "acronym"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "6.1 多关键字的排序\n\n8.6.2 链式基数排序\n\n8.7 外部排序\n\n8.7.1 外部排序的基本方法\n\n8.7.2 多路平衡归并的实现\n\n8.7.3 置换-选择排序\n\n8.7.4 最佳归并树\n\n8.8 LeetCode 算法题\n\n8.9 小结\n\n习题\n\n### \n\n# 重点:\n\n链表的程序设计\n循环队列（空，满）\nkmp，bf区别，提升，流程\nnext数组\n遍历二叉树\n哈夫曼编码\n二叉树的高度叶数节点递归\n图的应用（最小生成树，最短路径，拓补排序，关键路径）有向图是否有环，图形结构，线性结构\n散列表的查找\n除留余数\n处理冲突的方法\n开放地址，链地址法，算平均查找长度\n快速排序，堆排序",
+      "source_materials": [],
+      "order_index": 22
+    },
+    {
+      "id": "并查集及其应用",
+      "label": "并查集及其应用",
+      "parent": "树结构",
+      "weight": "key_point",
+      "prerequisites": [
+        "二叉树高度叶数节点递归算法",
+        "树与森林的转换"
+      ],
+      "hooks": [
+        "acronym"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "存储结构\n\n5.4.1 二叉树的性质\n\n5.4.2 二叉树的存储结构\n\n5.5 遍历二叉树和线索二叉树\n\n5.5.1 遍历二叉树\n\n5.5.2 线索二叉树\n\n5.6 树和森林\n\n5.6.1 树的存储结构\n\n5.6.2 森林与二叉树的转换\n\n5.6.3 树和森林的遍历\n\n5.7 哈夫曼树及其应用\n\n5.7.1 哈夫曼树的基本概念\n\n5.7.2 哈夫曼树的构造算法\n\n5.7.3 哈夫曼编码\n\n5.8 并查集及其应用\n\n5.8.1 并查集的基本概念\n\n5.8.2 并查集的实现及优化\n\n5.9 案例分析与实现\n\n5.10 LeetCode 算法练习题\n\n5.11 小结\n\n习题\n\n### 第6章 图\n\n6.1 图的定义和基本术语\n\n6.1.1 图的定义\n\n6.1.2 图的基本术语\n\n6.2 案例引入\n\n6.3 图的类型定义\n\n6.4 图的存储结构\n\n6.4.1 邻接矩阵\n\n6.4.2 邻接表\n\n6.4.3 十字链",
+      "source_materials": [],
+      "order_index": 23
+    },
+    {
+      "id": "图的存储结构邻接矩阵邻接表",
+      "label": "图的存储结构（邻接矩阵/邻接表）",
+      "parent": "基础概念",
+      "weight": "key_point",
+      "prerequisites": [
+        "next数组的求解",
+        "二叉树的性质与存储结构"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 24
+    },
+    {
+      "id": "图的遍历dfsbfs",
+      "label": "图的遍历（DFS/BFS）",
+      "parent": "遍历技术",
+      "weight": "key_point",
+      "prerequisites": [
+        "图的存储结构邻接矩阵邻接表"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 25
+    },
+    {
+      "id": "最小生成树primkruskal",
+      "label": "最小生成树（Prim/Kruskal）",
+      "parent": "树结构",
+      "weight": "must_know",
+      "prerequisites": [
+        "二叉树高度叶数节点递归算法",
+        "并查集及其应用"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 26
+    },
+    {
+      "id": "最短路径dijkstrafloyd",
+      "label": "最短路径（Dijkstra/Floyd）",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "next数组的求解",
+        "图的存储结构邻接矩阵邻接表"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 27
+    },
+    {
+      "id": "拓扑排序",
+      "label": "拓扑排序",
+      "parent": "排序算法",
+      "weight": "must_know",
+      "prerequisites": [
+        "最短路径dijkstrafloyd"
+      ],
+      "hooks": [
+        "acronym"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "1 图的定义和基本术语\n\n6.1.1 图的定义\n\n6.1.2 图的基本术语\n\n6.2 案例引入\n\n6.3 图的类型定义\n\n6.4 图的存储结构\n\n6.4.1 邻接矩阵\n\n6.4.2 邻接表\n\n6.4.3 十字链表\n\n6.4.4 邻接多重表\n\n6.5 图的遍历\n\n6.5.1 深度优先搜索\n\n6.5.2 广度优先搜索\n\n6.6 图的应用\n\n6.6.1 最小生成树\n\n6.6.2 最短路径\n\n6.6.3 拓扑排序\n\n6.6.4 关键路径\n\n6.7 案例分析与实现\n\n6.8 LeetCode 算法练习题\n\n6.9 小结\n\n习题\n\n### 第7章 查找\n\n7.1 查找的基本概念\n\n7.2 线性表的查找\n\n7.2.1 顺序查找\n\n7.2.2 折半查找\n\n7.2.3 分块查找\n\n7.3 树表的查找\n\n7.3.1 二叉排序树\n\n7.3.2 平衡二叉树\n\n7.3.3 红黑树\n\n7.3.4 B-树\n\n7.3.5 B+树",
+      "source_materials": [],
+      "order_index": 28
+    },
+    {
+      "id": "关键路径",
+      "label": "关键路径",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "最短路径dijkstrafloyd",
+        "图的存储结构邻接矩阵邻接表"
+      ],
+      "hooks": [
+        "acronym"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "6.1.1 图的定义\n\n6.1.2 图的基本术语\n\n6.2 案例引入\n\n6.3 图的类型定义\n\n6.4 图的存储结构\n\n6.4.1 邻接矩阵\n\n6.4.2 邻接表\n\n6.4.3 十字链表\n\n6.4.4 邻接多重表\n\n6.5 图的遍历\n\n6.5.1 深度优先搜索\n\n6.5.2 广度优先搜索\n\n6.6 图的应用\n\n6.6.1 最小生成树\n\n6.6.2 最短路径\n\n6.6.3 拓扑排序\n\n6.6.4 关键路径\n\n6.7 案例分析与实现\n\n6.8 LeetCode 算法练习题\n\n6.9 小结\n\n习题\n\n### 第7章 查找\n\n7.1 查找的基本概念\n\n7.2 线性表的查找\n\n7.2.1 顺序查找\n\n7.2.2 折半查找\n\n7.2.3 分块查找\n\n7.3 树表的查找\n\n7.3.1 二叉排序树\n\n7.3.2 平衡二叉树\n\n7.3.3 红黑树\n\n7.3.4 B-树\n\n7.3.5 B+树\n\n7.4 散列表的查找",
+      "source_materials": [],
+      "order_index": 29
+    },
+    {
+      "id": "有向图是否有环的判断",
+      "label": "有向图是否有环的判断",
+      "parent": "图论",
+      "weight": "must_know",
+      "prerequisites": [
+        "关键路径"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 30
+    },
+    {
+      "id": "顺序查找折半查找分块查找",
+      "label": "顺序查找/折半查找/分块查找",
+      "parent": "查找算法",
+      "weight": "key_point",
+      "prerequisites": [
+        "有向图是否有环的判断"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "6.4.4 邻接多重表\n\n6.5 图的遍历\n\n6.5.1 深度优先搜索\n\n6.5.2 广度优先搜索\n\n6.6 图的应用\n\n6.6.1 最小生成树\n\n6.6.2 最短路径\n\n6.6.3 拓扑排序\n\n6.6.4 关键路径\n\n6.7 案例分析与实现\n\n6.8 LeetCode 算法练习题\n\n6.9 小结\n\n习题\n\n### 第7章 查找\n\n7.1 查找的基本概念\n\n7.2 线性表的查找\n\n7.2.1 顺序查找\n\n7.2.2 折半查找\n\n7.2.3 分块查找\n\n7.3 树表的查找\n\n7.3.1 二叉排序树\n\n7.3.2 平衡二叉树\n\n7.3.3 红黑树\n\n7.3.4 B-树\n\n7.3.5 B+树\n\n7.4 散列表的查找\n\n7.4.1 散列表的基本概念\n\n7.4.2 散列函数的构造方法\n\n7.4.3 处理冲突的方法\n\n7.4.4 散列表的查找\n\n7.5 LeetCode 算法题\n\n7.6 小结\n\n习题",
+      "source_materials": [],
+      "order_index": 31
+    },
+    {
+      "id": "二叉排序树",
+      "label": "二叉排序树",
+      "parent": "排序算法",
+      "weight": "key_point",
+      "prerequisites": [
+        "拓扑排序"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "优先搜索\n\n6.6 图的应用\n\n6.6.1 最小生成树\n\n6.6.2 最短路径\n\n6.6.3 拓扑排序\n\n6.6.4 关键路径\n\n6.7 案例分析与实现\n\n6.8 LeetCode 算法练习题\n\n6.9 小结\n\n习题\n\n### 第7章 查找\n\n7.1 查找的基本概念\n\n7.2 线性表的查找\n\n7.2.1 顺序查找\n\n7.2.2 折半查找\n\n7.2.3 分块查找\n\n7.3 树表的查找\n\n7.3.1 二叉排序树\n\n7.3.2 平衡二叉树\n\n7.3.3 红黑树\n\n7.3.4 B-树\n\n7.3.5 B+树\n\n7.4 散列表的查找\n\n7.4.1 散列表的基本概念\n\n7.4.2 散列函数的构造方法\n\n7.4.3 处理冲突的方法\n\n7.4.4 散列表的查找\n\n7.5 LeetCode 算法题\n\n7.6 小结\n\n习题\n\n### 第8章 排序\n\n8.1 基本概念和排序方法概述\n\n8.1.1 排序的基本概念\n\n8.1.",
+      "source_materials": [],
+      "order_index": 32
+    },
+    {
+      "id": "平衡二叉树avl",
+      "label": "平衡二叉树（AVL）",
+      "parent": "树结构",
+      "weight": "key_point",
+      "prerequisites": [
+        "最小生成树primkruskal",
+        "并查集及其应用"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 33
+    },
+    {
+      "id": "b-树与b树",
+      "label": "B-树与B+树",
+      "parent": "查找算法",
+      "weight": "key_point",
+      "prerequisites": [
+        "顺序查找折半查找分块查找"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 34
+    },
+    {
+      "id": "散列表查找",
+      "label": "散列表查找",
+      "parent": "查找算法",
+      "weight": "must_know",
+      "prerequisites": [
+        "b-树与b树"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 35
+    },
+    {
+      "id": "除留余数法",
+      "label": "除留余数法",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "关键路径",
+        "图的存储结构邻接矩阵邻接表"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 36
+    },
+    {
+      "id": "处理冲突的方法开放地址链地址法",
+      "label": "处理冲突的方法（开放地址/链地址法）",
+      "parent": "基础概念",
+      "weight": "must_know",
+      "prerequisites": [
+        "除留余数法",
+        "图的存储结构邻接矩阵邻接表"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 37
+    },
+    {
+      "id": "平均查找长度计算",
+      "label": "平均查找长度计算",
+      "parent": "查找算法",
+      "weight": "must_know",
+      "prerequisites": [
+        "散列表查找",
+        "b-树与b树"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 38
+    },
+    {
+      "id": "插入排序直接折半希尔",
+      "label": "插入排序（直接/折半/希尔）",
+      "parent": "排序算法",
+      "weight": "key_point",
+      "prerequisites": [
+        "拓扑排序",
+        "二叉排序树"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "表\n\n6.5 图的遍历\n\n6.5.1 深度优先搜索\n\n6.5.2 广度优先搜索\n\n6.6 图的应用\n\n6.6.1 最小生成树\n\n6.6.2 最短路径\n\n6.6.3 拓扑排序\n\n6.6.4 关键路径\n\n6.7 案例分析与实现\n\n6.8 LeetCode 算法练习题\n\n6.9 小结\n\n习题\n\n### 第7章 查找\n\n7.1 查找的基本概念\n\n7.2 线性表的查找\n\n7.2.1 顺序查找\n\n7.2.2 折半查找\n\n7.2.3 分块查找\n\n7.3 树表的查找\n\n7.3.1 二叉排序树\n\n7.3.2 平衡二叉树\n\n7.3.3 红黑树\n\n7.3.4 B-树\n\n7.3.5 B+树\n\n7.4 散列表的查找\n\n7.4.1 散列表的基本概念\n\n7.4.2 散列函数的构造方法\n\n7.4.3 处理冲突的方法\n\n7.4.4 散列表的查找\n\n7.5 LeetCode 算法题\n\n7.6 小结\n\n习题\n\n### 第8章 排序",
+      "source_materials": [],
+      "order_index": 39
+    },
+    {
+      "id": "交换排序冒泡快速排序",
+      "label": "交换排序（冒泡/快速排序）",
+      "parent": "排序算法",
+      "weight": "must_know",
+      "prerequisites": [
+        "拓扑排序",
+        "插入排序直接折半希尔"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 40
+    },
+    {
+      "id": "选择排序简单选择堆排序",
+      "label": "选择排序（简单选择/堆排序）",
+      "parent": "排序算法",
+      "weight": "must_know",
+      "prerequisites": [
+        "交换排序冒泡快速排序",
+        "插入排序直接折半希尔"
+      ],
+      "hooks": [
+        "none"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 41
+    },
+    {
+      "id": "归并排序",
+      "label": "归并排序",
+      "parent": "排序算法",
+      "weight": "key_point",
+      "prerequisites": [
+        "选择排序简单选择堆排序",
+        "插入排序直接折半希尔"
+      ],
+      "hooks": [
+        "contrast",
+        "acronym"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "排序的基本概念\n\n8.1.2 内部排序方法的分类\n\n8.1.3 待排序记录的存储方式\n\n8.1.4 排序算法效率的评价指标\n\n8.2 插入排序\n\n8.2.1 直接插入排序\n\n8.2.2 折半插入排序\n\n8.2.3 希尔排序\n\n8.3 交换排序\n\n8.3.1 冒泡排序\n\n8.3.2 快速排序\n\n8.4 选择排序\n\n8.4.1 简单选择排序\n\n8.4.2 树形选择排序\n\n8.4.3 堆排序\n\n8.5 归并排序\n\n8.6 基数排序\n\n8.6.1 多关键字的排序\n\n8.6.2 链式基数排序\n\n8.7 外部排序\n\n8.7.1 外部排序的基本方法\n\n8.7.2 多路平衡归并的实现\n\n8.7.3 置换-选择排序\n\n8.7.4 最佳归并树\n\n8.8 LeetCode 算法题\n\n8.9 小结\n\n习题\n\n### \n\n# 重点:\n\n链表的程序设计\n循环队列（空，满）\nkmp，bf区别，提升，流程\nnext数组\n遍历二叉",
+      "source_materials": [],
+      "order_index": 42
+    },
+    {
+      "id": "基数排序",
+      "label": "基数排序",
+      "parent": "排序算法",
+      "weight": "key_point",
+      "prerequisites": [
+        "选择排序简单选择堆排序",
+        "归并排序"
+      ],
+      "hooks": [
+        "contrast",
+        "acronym"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": ".1.2 内部排序方法的分类\n\n8.1.3 待排序记录的存储方式\n\n8.1.4 排序算法效率的评价指标\n\n8.2 插入排序\n\n8.2.1 直接插入排序\n\n8.2.2 折半插入排序\n\n8.2.3 希尔排序\n\n8.3 交换排序\n\n8.3.1 冒泡排序\n\n8.3.2 快速排序\n\n8.4 选择排序\n\n8.4.1 简单选择排序\n\n8.4.2 树形选择排序\n\n8.4.3 堆排序\n\n8.5 归并排序\n\n8.6 基数排序\n\n8.6.1 多关键字的排序\n\n8.6.2 链式基数排序\n\n8.7 外部排序\n\n8.7.1 外部排序的基本方法\n\n8.7.2 多路平衡归并的实现\n\n8.7.3 置换-选择排序\n\n8.7.4 最佳归并树\n\n8.8 LeetCode 算法题\n\n8.9 小结\n\n习题\n\n### \n\n# 重点:\n\n链表的程序设计\n循环队列（空，满）\nkmp，bf区别，提升，流程\nnext数组\n遍历二叉树\n哈夫曼编码\n二叉",
+      "source_materials": [],
+      "order_index": 43
+    },
+    {
+      "id": "各排序算法时间空间复杂度对比",
+      "label": "各排序算法时间/空间复杂度对比",
+      "parent": "基础概念",
+      "weight": "key_point",
+      "prerequisites": [
+        "处理冲突的方法开放地址链地址法",
+        "图的存储结构邻接矩阵邻接表"
+      ],
+      "hooks": [
+        "contrast"
+      ],
+      "exam_types_map": {
+        "选择题": true,
+        "填空题": true,
+        "简答题": true,
+        "算法设计题": true,
+        "综合应用题": true
+      },
+      "content_summary": "",
+      "source_materials": [],
+      "order_index": 44
+    }
+  ],
+  "topo_order": [
+    "算法时间复杂度分析",
+    "算法空间复杂度分析",
+    "顺序表的实现与基本操作",
+    "栈与递归",
+    "单链表的定义与基本操作",
+    "链队的表示与实现",
+    "循环链表与双向链表",
+    "串的存储结构与模式匹配算法",
+    "next数组的求解",
+    "顺序表与链表的比较",
+    "链表的程序设计",
+    "特殊矩阵的压缩存储",
+    "广义表的定义与存储结构",
+    "栈的定义与顺序栈实现",
+    "二叉树的性质与存储结构",
+    "二叉树的遍历前序中序后序层次",
+    "链栈的表示与实现",
+    "循环队列空与满的判断",
+    "kmp算法与bf算法区别",
+    "图的存储结构邻接矩阵邻接表",
+    "最短路径dijkstrafloyd",
+    "拓扑排序",
+    "关键路径",
+    "有向图是否有环的判断",
+    "除留余数法",
+    "处理冲突的方法开放地址链地址法",
+    "线索二叉树",
+    "图的遍历dfsbfs",
+    "二叉排序树",
+    "顺序查找折半查找分块查找",
+    "各排序算法时间空间复杂度对比",
+    "树与森林的转换",
+    "哈夫曼树与哈夫曼编码",
+    "二叉树高度叶数节点递归算法",
+    "插入排序直接折半希尔",
+    "交换排序冒泡快速排序",
+    "选择排序简单选择堆排序",
+    "b-树与b树",
+    "散列表查找",
+    "平均查找长度计算",
+    "并查集及其应用",
+    "最小生成树primkruskal",
+    "归并排序",
+    "平衡二叉树avl",
+    "基数排序"
+  ]
+}

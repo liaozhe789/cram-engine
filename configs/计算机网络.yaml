@@ -1,0 +1,43 @@
+course: 计算机网络
+subject_type: mixed
+textbook: "《计算机网络》（谢希仁，第八版）"
+exam_types:
+  - 填空题
+  - 选择题
+  - 简答题
+  - 名词解释
+  - 综合题
+
+materials:
+  - path: C:\Users\qiyong\Desktop\计算机网络\计算机网络考点归纳.md
+    type: key_points
+  - path: C:\Users\qiyong\Desktop\计算机网络\计算机网络题库.md
+    type: question_bank
+
+key_points:
+  - 计算机网络概述（三网融合、互联网特点、交换技术、性能指标）
+  - 网络体系结构（五层协议、协议三要素、协议与服务、OSI/TCP/IP对比）
+  - 物理层（接口特性、通信方式、编码方式、香农公式、复用技术）
+  - 数据链路层（三个基本问题、CRC、PPP、CSMA/CD、MAC地址、VLAN）
+  - 网络层（IP地址分类、CIDR、ARP、ICMP、IPv6、RIP/OSPF/BGP、NAT、VPN）
+  - 运输层（TCP/UDP对比、端口号、停止等待协议、流量控制、拥塞控制、三次握手/四次挥手）
+  - 应用层（DNS、HTTP、FTP、电子邮件协议、DHCP）
+  - 计算题（时延计算、CRC、子网划分、CIDR最长前缀匹配、拥塞窗口变化）
+
+must_know_ids:
+  - "1"
+  - "2"
+  - "4"
+  - "5"
+  - "6"
+  - "7"
+
+preferences:
+  language: 中文
+  grading_strictness: strict
+  example_domains:
+    - 校园网/企业网
+    - 浏览器访问网页
+    - 电子邮件收发
+  formula_rendering: latex
+  code_language: none

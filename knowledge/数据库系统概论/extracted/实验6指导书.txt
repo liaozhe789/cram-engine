@@ -1,0 +1,152 @@
+一 实验题目：触发器的定义。
+二 实验目的：熟悉触发器的定义和使用。
+三 实验内容及要求：
+（从下面10个题目中选一个）
+题目一：
+学生（学号，年龄，性别，系名） 
+课程（课号，课名，学分，学时）
+选课（学号，课号，成绩）
+1．建立学生表的insert触发器，若向学生表中插入一条记录，则自动向选课表中插入一行，令该生选一门选修人数最多的课。
+2．在建立学生表的delete触发器，若选课表中该生有选课记录，则拒绝删除，要求在删除学生信息同时，将相关表中的信息全部删除。
+题目二：
+图书（书号，书名，价格，出版社） 
+读者（卡号，姓名，年龄，所属单位）
+借阅（书号，卡号，借阅日期）
+建立图书的insert触发器，若向图书中插入一条记录，则自动向借阅表中插入一行，令该书被借阅次数最多的读者借阅。
+题目三：
+商品（编号，品名，进价，库存，售价，厂商编号） 
+顾客（卡号，姓名，电话，积分）
+厂商（编号，厂址，名称、电话）
+销售（顾客卡号，商品编号，数量，日期）
+建立商品的delete 触发器，只有当此商品没有人买时才可删除，若有销售记录不能删除。
+题目四：
+图书（书号，书名，作者编号，价格，出版社编号） 
+作者（编号，姓名，电话）
+出版社（编号，出版社名称，地址）
+建立作者的delete 触发器，只有当此作者没有任何作品才可删除，若有出书的记录不能删除。
+题目五：
+零件（编号，名称，颜色） 
+车间（编号，名称，人数，主任）
+产品（编号，名称，车间编号）
+使用（产品编号，使用零件编号，个数）
+建立零件的delete 触发器，只有当此零件没有产品用时才可删除，若有使用记录不能删除。
+题目六：
+药品（编号，名称，价格，厂商） 
+处方（药品编号，数量，医生编号）
+医生 （编号，姓名，科室，职称）
+建立药品的delete 触发器，只有当此药品品没有人买时才可删除，若有处方记录不能删除。
+题目七：
+学生（学号，年龄，性别，系名） 
+教材（编号，书名，出版社编号，价格）
+订购（学号，书号，数量）
+出版社（编号，名称，地址）
+建立学生的insert触发器，若向学生表中插入一条记录，则自动向订购表中插入一行，令该学生订购被订购数量最多的教材。
+题目八：
+员工（编号，姓名，性别，年龄，部门编号，年薪） 
+部门（编号，名称，人数，负责人）
+项目（编号，名称，负责部门编号）
+建立部门的delete触发器，当删除一条部门记录，1）如果这个部门有负责的项目则将它所负责的项目转到除该部门以外负责项目最少的部门名下。2）将这个部门的员工转到2号部门下。（假设删除的不是2号部门）
+题目九：
+帐户（编号，姓名，余额，建立日期，储蓄所编号） 
+储蓄所（编号，名称，地址，人数，所属城市）
+借贷（帐户，借贷类型，金额，日期）
+建立储蓄所的delete 触发器，只有当此储蓄所没有帐户时才可删除，若有销售记录不能删除。
+题目十：
+仓库（编号，保管员编号，面积） 
+保管员（编号，姓名，年龄，电话、月薪）
+商品（编号，品名，仓库编号、数量，单价）
+建立仓库的delete 触发器，只有当此仓库没有商品时才可删除。
+四 实验指导
+1 定义触发器
+CREATE TRIGGER trigger_name
+ON table
+[WITH ENCRYPTION]
+{
+    {FOR { [DELETE] [,] [INSERT] [,] [UPDATE] }
+        [WITH APPEND]
+        [NOT FOR REPLICATION]
+        AS
+            sql_statement [...n]
+    }
+    |
+    {FOR { [INSERT] [,] [UPDATE] }
+        [WITH APPEND]
+        [NOT FOR REPLICATION]
+        AS 
+        {    IF UPDATE (column)
+            [{AND | OR} UPDATE (column)] 
+                [...n]
+            | IF (COLUMNS_UPDATED() {bitwise_operator} updated_bitmask) 
+                { comparison_operator} column_bitmask [...n]
+        }
+            sql_statement [ ...n]
+    }
+}
+例1  
+CREATE  TRIGGER INS-TRIGGER
+ON  SALES
+FOR  INSERT
+AS
+UPDATE TITLES
+	SET ytd_sales=ytd_sales+( select  sum(qty)  
+from  inserted  
+group by inserted.title_id
+having titles.title_id=inserted.title_id)
+ 例2
+CREATE TRIGGER UPD_TRIGGER
+ON SALES
+FOR  UPDATE
+AS
+UPDATE TITLES
+	SET    ytd_sales=ytd_sales - ( select  sum(qty)  
+from  deleted  
+group by deleted.title_id
+having titles.title_id=deleted.title_id)
+  例3 
+CREATE TRIGGER UPD_TRIGGER
+ON SALES
+FOR  DELETE
+AS
+IF (select count(*) from TITLE,  deleted  where titles.title_id =deleted.title_id)<>0
+UPDATE TITLES
+	SET    ytd_sales=ytd_sales - ( select  sum(qty)  
+from  deleted  
+group by deleted.title_id
+having titles.title_id=deleted.title_id)
+例 4 
+USE pubs
+IF EXISTS (SELECT name FROM sysobjects
+        WHERE name = 'reminder' AND type = 'TR')
+    DROP TRIGGER reminder
+GO
+CREATE TRIGGER employee_insupd
+ON employee
+FOR INSERT, UPDATE
+AS
+/* Get the range of level for this job type from the jobs table. */
+DECLARE @min_lvl tinyint,
+    @max_lvl tinyint,
+    @emp_lvl tinyint,
+    @job_id smallint
+SELECT @min_lvl = min_lvl, 
+    @max_lvl = max_lvl, 
+    @emp_lvl = i.job_lvl,
+    @job_id = i.job_id
+FROM employee e INNER JOIN inserted i ON e.emp_id = i.emp_id 
+    JOIN jobs j ON j.job_id = i.job_id
+IF (@job_id = 1) and (@emp_lvl <> 10) 
+BEGIN
+    RAISERROR ('Job id 1 expects the default level of 10.', 16, 1)
+    ROLLBACK TRANSACTION
+END
+ELSE
+IF NOT (@emp_lvl BETWEEN @min_lvl AND @max_lvl)
+BEGIN
+    RAISERROR ('The level for job_id:%d should be between %d and %d.',
+        16, 1, @job_id, @min_lvl, @max_lvl)
+    ROLLBACK TRANSACTION
+END
+五 实验报告要求：
+1 按要求写出触发器定义。
+2 给出验证数据和操作结果
+3 遇到的问题和解决方法
