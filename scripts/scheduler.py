@@ -25,6 +25,20 @@ from utils import (
 )
 
 
+def _km_context(progress: dict, topo_order: list) -> str:
+    km = progress.get('knowledge_map', {})
+    if not km:
+        return '无诊断数据'
+    weak_nodes = [nid for nid in topo_order if km.get(nid, {}).get('level') == 'weak']
+    strong_nodes = [nid for nid in topo_order if km.get(nid, {}).get('level') == 'strong']
+    parts = []
+    if weak_nodes:
+        parts.append(f'薄弱({len(weak_nodes)}个): {", ".join(weak_nodes[:5])}{"..." if len(weak_nodes) > 5 else ""}')
+    if strong_nodes:
+        parts.append(f'熟练({len(strong_nodes)}个): {", ".join(strong_nodes[:5])}{"..." if len(strong_nodes) > 5 else ""}')
+    return '; '.join(parts) if parts else '全部知识点掌握度未知'
+
+
 def schedule(progress: dict, index: dict) -> dict:
     nodes = {n["id"]: n for n in index.get("nodes", [])}
     prog_nodes = progress.get("nodes", {})
@@ -212,6 +226,8 @@ def schedule(progress: dict, index: dict) -> dict:
                     "hooks": node.get("hooks", []),
                     "current_round": 1,
                     "user_level": user_level or "unknown",
+                    "node_mastery": prog_nodes.get(next_nid, {}).get("mastery", "unknown") if next_nid else "unknown",
+                    "knowledge_map_summary": _km_context(progress, topo_order),
                 }
             }
 

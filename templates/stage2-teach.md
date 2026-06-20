@@ -22,6 +22,21 @@
 - 已学知识点（可用于关联）：{learned_nodes}
 - 学科类型：{subject_type}
 - **用户水平**：{user_level}（beginner / intermediate / advanced）
+- **当前节点掌握度**：{node_mastery}（strong / developing / weak / unknown）
+- **知识图谱诊断**：{knowledge_map_summary}
+
+## 讲授策略（综合用户水平 + 知识点掌握度 + must_know 权重）
+
+根据当前节点的 {node_mastery} 状态和 {weight} 权重，调整讲授：
+
+| 掌握度 | must_know | key_point |
+|--------|-----------|-----------|
+| strong | 完整讲一遍 + 1道陷阱题验证 | 快速回顾 + 1道基础题，对则跳过 |
+| developing | 正常讲授，多1个场景例子 | 正常讲授 |
+| weak | 放慢节奏，至少2个不同场景例子，确认每块理解 | 正常讲授，确保基础场景理解 |
+| unknown | 按 {user_level} 默认节奏（见下方三档） | 按 {user_level} 默认节奏 |
+
+**核心原则**：must_know 考点无论掌握度如何都至少完整讲一遍，key_point 考点如果 strong 可以加速。薄弱点的例子要换场景、换角度，不能重复诊断题里出现过的例题。
 
 ## 教学风格（根据 user_level 调整）
 

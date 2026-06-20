@@ -47,6 +47,8 @@ def cmd_init(course: str) -> dict:
         'current_stage': 0,  # ???0??????
         'current_node_id': topo[0] if topo else None,
         'user_level': 'unknown',
+        'user_level_source': '',
+        'knowledge_map': {},
         'stage2_pace': 'normal',
         'stage2_position': 0,
         'stage3_position': 0,
@@ -99,6 +101,8 @@ def cmd_status(course: str) -> dict:
         'current_stage': progress['current_stage'],
         'current_node': progress.get('current_node_id'),
         'user_level': progress.get('user_level', 'unknown'),
+        'user_level_source': progress.get('user_level_source', ''),
+        'knowledge_map_summary': _km_summary(progress),
         'total_nodes': total,
         'stage2_done': stage2_done,
         'stage3_passed': stage3_passed,
@@ -170,6 +174,18 @@ def cmd_update(course: str, updates_json: str):
 
     atomic_write_json(progress_path(course), progress)
     print(f'Progress updated: stage={progress['current_stage']}')
+
+
+def _km_summary(progress: dict) -> dict:
+    km = progress.get('knowledge_map', {})
+    if not km:
+        return {}
+    return {
+        'strong': sum(1 for v in km.values() if v.get('level') == 'strong'),
+        'developing': sum(1 for v in km.values() if v.get('level') == 'developing'),
+        'weak': sum(1 for v in km.values() if v.get('level') == 'weak'),
+        'unknown': sum(1 for v in km.values() if v.get('level') == 'unknown'),
+    }
 
 
 def _auto_mastery_check(progress: dict):
