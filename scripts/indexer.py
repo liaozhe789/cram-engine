@@ -41,7 +41,7 @@ def build_index(course: str) -> dict:
         raw_id = str(i + 1)          # 1-based index for matching
         weight = 'must_know' if (raw_id in must_know_ids or node_id in must_know_ids) else 'key_point'
         content_summary = _find_content(label, extracted_texts)
-        hooks = _infer_hooks(label, content_summary)
+        hooks = _infer_hooks(label, content_summary, config.get('language', 'zh'))
         prereqs, parent = _infer_prerequisites_and_parent(i, nodes, label, config)
         exam_types = config.get('exam_types', [])
         exam_types_map = {et: True for et in exam_types}
@@ -94,12 +94,31 @@ def _find_content(label: str, extracted_texts: dict) -> str:
     return ' ... '.join(snippets[:3]) if snippets else ''
 
 
-def _infer_hooks(label: str, content_summary: str) -> list:
-    '''推断适合的记忆钩子类型。'''
+def _infer_hooks(label: str, content_summary: str, language: str = 'zh') -> list:
+    """推断适合的记忆钩子类型。支持中英文关键词。"""
     hooks = []
-    contrast_keywords = ['区别', '对比', '比较', '差异', '不同', 'vs', '不同于', '相反', '优缺点']
-    absurd_keywords = ['抽象', '原理', '定理', '定律', '公理', '协议']
-    acronym_keywords = ['步骤', '流程', '阶段', '层次', '分类', '类型', '层', '种']
+    keywords = {
+        'contrast': {
+            'zh': ['区别', '对比', '比较', '差异', '不同', 'vs', '不同于', '相反', '优缺点'],
+            'en': ['difference', 'compare', 'contrast', 'versus', 'pros and cons', 'advantages', 'disadvantages', 'unlike', 'however'],
+        },
+        'absurd': {
+            'zh': ['抽象', '原理', '定理', '定律', '公理', '协议'],
+            'en': ['abstract', 'principle', 'theorem', 'axiom', 'protocol', 'theory'],
+        },
+        'acronym': {
+            'zh': ['步骤', '流程', '阶段', '层次', '分类', '类型', '层', '种'],
+            'en': ['step', 'process', 'stage', 'layer', 'classification', 'type', 'category', 'phase', 'level'],
+        },
+    }
+    contrast_keywords = keywords['contrast'].get(language, keywords['contrast']['zh'])
+    absurd_keywords = keywords['absurd'].get(language, keywords['absurd']['zh'])
+    acronym_keywords = keywords['acronym'].get(language, keywords['acronym']['zh'])
+    # Also check other language as fallback
+    other_lang = 'en' if language == 'zh' else 'zh'
+    contrast_keywords += keywords['contrast'].get(other_lang, [])
+    absurd_keywords += keywords['absurd'].get(other_lang, [])
+    acronym_keywords += keywords['acronym'].get(other_lang, [])
 
     combined = label + (content_summary or '')
     if any(kw in combined for kw in contrast_keywords):
@@ -117,11 +136,7 @@ def _infer_prerequisites_and_parent(
     label: str,
     config: dict,
 ) -> tuple:
-    '''推断父类目和前置依赖。
-
-    改进了原来的强行串链逻辑：使用多维度关键词匹配推断 parent，
-    然后同一 parent 下最多取最近一个 must_know 和最近一个任意节点作为前置。
-    '''
+    """推断父类目和前置依赖。支持中英文关键词。"""
     # 关键词 -> 父类目映射
     parent_map = {
         '排序': '排序算法',
@@ -148,10 +163,25 @@ def _infer_prerequisites_and_parent(
         '复杂度': '基础概念',
         'KMP': '线性结构',
         '存储结构': '基础概念',
+        # English keywords
+        'sort': 'Sorting Algorithms', 'search': 'Search Algorithms',
+        'graph': 'Graph Theory', 'tree': 'Tree Structures',
+        'binary tree': 'Tree Structures', 'traversal': 'Traversal Techniques',
+        'linked list': 'Linear Structures', 'array': 'Linear Structures',
+        'stack': 'Linear Structures', 'queue': 'Linear Structures',
+        'string': 'Linear Structures', 'matrix': 'Matrices & Generalized Lists',
+        'huffman': 'Tree Structures', 'disjoint set': 'Tree Structures',
+        'union find': 'Tree Structures', 'hash': 'Search Algorithms',
+        'B-tree': 'Search Algorithms', 'B+tree': 'Search Algorithms',
+        'recursion': 'Fundamentals', 'complexity': 'Fundamentals',
+        'big o': 'Fundamentals', 'KMP': 'Linear Structures',
+        'database': 'Databases', 'sql': 'Databases',
+        'protocol': 'Protocols', 'network': 'Networking',
     }
 
     # 从 label 中找匹配的父类目
-    parent = '基础概念'
+    language = config.get('language', 'zh')
+    parent = 'Fundamentals' if language == 'en' else '基础概念'
     for kw, cat in sorted(parent_map.items(), key=lambda x: -len(x[0])):
         if kw.lower() in label.lower():
             parent = cat
