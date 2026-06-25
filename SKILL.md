@@ -1,6 +1,6 @@
 ﻿---
 name: cram-engine
-description: "AI exam cram engine with SM-2 spaced repetition, knowledge graph topological sorting, and a 6-stage state machine (diagnose, deconstruct, teach, test, remediate, review). Ingests past exams, textbooks, and lecture notes. Supports bilingual Chinese/English teaching."
+description: "Use when the user wants to cram for exams, mentions cram load / cram next / cram status, or asks about exam prep and考前速成. AI exam cram engine with SM-2 spaced repetition, knowledge graph topological sorting, and a 6-stage state machine (diagnose, deconstruct, teach, test, remediate, review). Ingests past exams, textbooks, and lecture notes. Supports bilingual Chinese/English teaching."
 ---
 
 # 期末速成引擎 (Cram Engine) for Codex

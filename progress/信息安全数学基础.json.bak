@@ -1,16 +1,16 @@
 {
   "course": "信息安全数学基础",
-  "current_stage": 0,
-  "current_node_id": "整除与带余除法",
-  "user_level": "unknown",
+  "current_stage": 3,
+  "current_node_id": "zheng-chu-yu-dai-yu-chu-fa",
+  "user_level": "intermediate",
   "stage2_pace": "normal",
   "stage2_position": 0,
   "stage3_position": 0,
-  "stage3_current_submode": null,
+  "stage3_current_submode": "exam_simulation",
   "nodes": {
     "整除与带余除法": {
       "stage1_done": true,
-      "stage2_done": false,
+      "stage2_done": true,
       "stage3_passed": null,
       "stage3_wrong_answers": [],
       "stage4_done": false,
@@ -27,7 +27,7 @@
     },
     "最大公因数与辗转相除法": {
       "stage1_done": true,
-      "stage2_done": false,
+      "stage2_done": true,
       "stage3_passed": null,
       "stage3_wrong_answers": [],
       "stage4_done": false,
@@ -44,7 +44,7 @@
     },
     "扩展辗转相除法与贝祖等式": {
       "stage1_done": true,
-      "stage2_done": false,
+      "stage2_done": true,
       "stage3_passed": null,
       "stage3_wrong_answers": [],
       "stage4_done": false,
@@ -61,7 +61,7 @@
     },
     "最小公倍数": {
       "stage1_done": true,
-      "stage2_done": false,
+      "stage2_done": true,
       "stage3_passed": null,
       "stage3_wrong_answers": [],
       "stage4_done": false,
@@ -78,7 +78,7 @@
     },
     "算术基本定理与标准分解式": {
       "stage1_done": true,
-      "stage2_done": false,
+      "stage2_done": true,
       "stage3_passed": null,
       "stage3_wrong_answers": [],
       "stage4_done": false,
@@ -95,7 +95,7 @@
     },
     "同余的基本性质": {
       "stage1_done": true,
-      "stage2_done": false,
+      "stage2_done": true,
       "stage3_passed": null,
       "stage3_wrong_answers": [],
       "stage4_done": false,
@@ -112,7 +112,7 @@
     },
     "完全剩余系": {
       "stage1_done": true,
-      "stage2_done": false,
+      "stage2_done": true,
       "stage3_passed": null,
       "stage3_wrong_answers": [],
       "stage4_done": false,
@@ -129,7 +129,7 @@
     },
     "简化剩余系": {
       "stage1_done": true,
-      "stage2_done": false,
+      "stage2_done": true,
       "stage3_passed": null,
       "stage3_wrong_answers": [],
       "stage4_done": false,
@@ -146,7 +146,7 @@
     },
     "欧拉函数": {
       "stage1_done": true,
-      "stage2_done": false,
+      "stage2_done": true,
       "stage3_passed": null,
       "stage3_wrong_answers": [],
       "stage4_done": false,
@@ -163,7 +163,7 @@
     },
     "欧拉定理": {
       "stage1_done": true,
-      "stage2_done": false,
+      "stage2_done": true,
       "stage3_passed": null,
       "stage3_wrong_answers": [],
       "stage4_done": false,
@@ -180,7 +180,7 @@
     },
     "费马小定理及应用": {
       "stage1_done": true,
-      "stage2_done": false,
+      "stage2_done": true,
       "stage3_passed": null,
       "stage3_wrong_answers": [],
       "stage4_done": false,
@@ -197,7 +197,7 @@
     },
     "模幂运算与平方-乘算法": {
       "stage1_done": true,
-      "stage2_done": false,
+      "stage2_done": true,
       "stage3_passed": null,
       "stage3_wrong_answers": [],
       "stage4_done": false,
@@ -214,7 +214,7 @@
     },
     "一次同余方程求解": {
       "stage1_done": true,
-      "stage2_done": false,
+      "stage2_done": true,
       "stage3_passed": null,
       "stage3_wrong_answers": [],
       "stage4_done": false,
@@ -231,7 +231,7 @@
     },
     "逆元求解扩展辗转相除法": {
       "stage1_done": true,
-      "stage2_done": false,
+      "stage2_done": true,
       "stage3_passed": null,
       "stage3_wrong_answers": [],
       "stage4_done": false,
@@ -248,7 +248,7 @@
     },
     "中国剩余定理-crt": {
       "stage1_done": true,
-      "stage2_done": false,
+      "stage2_done": true,
       "stage3_passed": null,
       "stage3_wrong_answers": [],
       "stage4_done": false,
@@ -265,7 +265,7 @@
     },
     "一次同余方程组与解数": {
       "stage1_done": true,
-      "stage2_done": false,
+      "stage2_done": true,
       "stage3_passed": null,
       "stage3_wrong_answers": [],
       "stage4_done": false,
@@ -282,7 +282,7 @@
     },
     "仿射密码算法": {
       "stage1_done": true,
-      "stage2_done": false,
+      "stage2_done": true,
       "stage3_passed": null,
       "stage3_wrong_answers": [],
       "stage4_done": false,
@@ -299,7 +299,7 @@
     },
     "rsa公钥密码算法加密解密密钥生成正确性证明": {
       "stage1_done": true,
-      "stage2_done": false,
+      "stage2_done": true,
       "stage3_passed": null,
       "stage3_wrong_answers": [],
       "stage4_done": false,
@@ -316,7 +316,7 @@
     },
     "二次同余与二次剩余": {
       "stage1_done": true,
-      "stage2_done": false,
+      "stage2_done": true,
       "stage3_passed": null,
       "stage3_wrong_answers": [],
       "stage4_done": false,
@@ -333,7 +333,7 @@
     },
     "勒让德符号": {
       "stage1_done": true,
-      "stage2_done": false,
+      "stage2_done": true,
       "stage3_passed": null,
       "stage3_wrong_answers": [],
       "stage4_done": false,
@@ -350,7 +350,7 @@
     },
     "欧拉判别法": {
       "stage1_done": true,
-      "stage2_done": false,
+      "stage2_done": true,
       "stage3_passed": null,
       "stage3_wrong_answers": [],
       "stage4_done": false,
@@ -367,7 +367,7 @@
     },
     "二次互反律": {
       "stage1_done": true,
-      "stage2_done": false,
+      "stage2_done": true,
       "stage3_passed": null,
       "stage3_wrong_answers": [],
       "stage4_done": false,
@@ -384,7 +384,7 @@
     },
     "原根与阶的定义及性质": {
       "stage1_done": true,
-      "stage2_done": false,
+      "stage2_done": true,
       "stage3_passed": null,
       "stage3_wrong_answers": [],
       "stage4_done": false,
@@ -401,7 +401,7 @@
     },
     "原根阶的证明": {
       "stage1_done": true,
-      "stage2_done": false,
+      "stage2_done": true,
       "stage3_passed": null,
       "stage3_wrong_answers": [],
       "stage4_done": false,
@@ -418,7 +418,7 @@
     },
     "素数的原根求解": {
       "stage1_done": true,
-      "stage2_done": false,
+      "stage2_done": true,
       "stage3_passed": null,
       "stage3_wrong_answers": [],
       "stage4_done": false,
@@ -435,7 +435,7 @@
     },
     "离散对数": {
       "stage1_done": true,
-      "stage2_done": false,
+      "stage2_done": true,
       "stage3_passed": null,
       "stage3_wrong_answers": [],
       "stage4_done": false,
@@ -452,7 +452,7 @@
     },
     "elgamal密码算法": {
       "stage1_done": true,
-      "stage2_done": false,
+      "stage2_done": true,
       "stage3_passed": null,
       "stage3_wrong_answers": [],
       "stage4_done": false,
@@ -469,7 +469,7 @@
     },
     "群的基本概念": {
       "stage1_done": true,
-      "stage2_done": false,
+      "stage2_done": true,
       "stage3_passed": null,
       "stage3_wrong_answers": [],
       "stage4_done": false,
@@ -486,7 +486,7 @@
     },
     "环与域基础": {
       "stage1_done": true,
-      "stage2_done": false,
+      "stage2_done": true,
       "stage3_passed": null,
       "stage3_wrong_answers": [],
       "stage4_done": false,
@@ -503,7 +503,7 @@
     },
     "有限域基本概念": {
       "stage1_done": true,
-      "stage2_done": false,
+      "stage2_done": true,
       "stage3_passed": null,
       "stage3_wrong_answers": [],
       "stage4_done": false,
@@ -520,7 +520,7 @@
     },
     "椭圆曲线基本概念与weierstrass方程": {
       "stage1_done": true,
-      "stage2_done": false,
+      "stage2_done": true,
       "stage3_passed": null,
       "stage3_wrong_answers": [],
       "stage4_done": false,
@@ -537,7 +537,7 @@
     },
     "椭圆曲线在密码学中的应用": {
       "stage1_done": true,
-      "stage2_done": false,
+      "stage2_done": true,
       "stage3_passed": null,
       "stage3_wrong_answers": [],
       "stage4_done": false,
